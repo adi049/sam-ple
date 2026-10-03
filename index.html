@@ -1,0 +1,2139 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Luna Insurance Brokers Pvt. Ltd. | Compare &amp; Buy Insurance Online</title>
+<meta name="description" content="Luna Insurance - IRDAI Licensed Insurance Broker. Compare Car, Bike, Health, Term & Travel Insurance from 42+ insurers and buy online in minutes.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        lunaBlue: '#0A2A62', lunaDeep: '#071E47', lunaBright: '#1656D6',
+        lunaRed: '#E30613', lunaRedDark: '#B8050F', lunaOrange: '#FF6B2C',
+        lunaLight: '#F2F6FF', lunaMint: '#E6F7EF', lunaGold: '#FFB800'
+      },
+      fontFamily: { jakarta: ['"Plus Jakarta Sans"','sans-serif'] },
+      boxShadow: {
+        card: '0 10px 40px -10px rgba(10,42,98,0.15)',
+        pop: '0 20px 60px -10px rgba(227,6,19,0.35)'
+      }
+    }
+  }
+}
+</script>
+<style>
+  *{font-family:'Plus Jakarta Sans',sans-serif;}
+  html{scroll-behavior:smooth; -webkit-text-size-adjust:100%;}
+  body{background:#F7F9FF;color:#0A2A62;overflow-x:hidden;}
+  ::-webkit-scrollbar{width:10px;height:8px}
+  ::-webkit-scrollbar-track{background:#EAF0FF}
+  ::-webkit-scrollbar-thumb{background:linear-gradient(#0A2A62,#1656D6);border-radius:10px}
+
+  .top-strip{background:linear-gradient(90deg,#071E47,#0A2A62 40%,#1656D6)}
+  .nav-link{position:relative;font-weight:600;font-size:14.5px;color:#0A2A62;transition:.25s;padding:8px 2px}
+  .nav-link:after{content:'';position:absolute;left:0;bottom:0;height:3px;width:0;background:linear-gradient(90deg,#E30613,#FF6B2C);border-radius:10px;transition:.3s}
+  .nav-link:hover{color:#E30613}
+  .nav-link:hover:after{width:100%}
+
+  .btn-primary{background:linear-gradient(135deg,#E30613 0%,#FF6B2C 100%);transition:.3s;box-shadow:0 10px 25px -8px rgba(227,6,19,.5)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 15px 30px -8px rgba(227,6,19,.6);filter:brightness(1.05)}
+  .btn-primary:active{transform:translateY(0) scale(.98)}
+  .btn-blue{background:linear-gradient(135deg,#0A2A62,#1656D6);transition:.3s;box-shadow:0 10px 25px -8px rgba(10,42,98,.5)}
+  .btn-blue:hover{transform:translateY(-2px);filter:brightness(1.1)}
+  .btn-blue:active{transform:translateY(0) scale(.98)}
+
+  .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;pointer-events:none}
+  .hero-slide.active{opacity:1;pointer-events:auto}
+  .hero-slide .bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.12);transition:transform 7s ease}
+  .hero-slide.active .bg{transform:scale(1)}
+
+  .quote-tab{transition:.25s;border:2px solid transparent;white-space:nowrap}
+  .quote-tab.active{background:#0A2A62;color:#fff;border-color:#0A2A62;box-shadow:0 8px 20px -6px rgba(10,42,98,.5)}
+  .quote-tab:not(.active):hover{background:#EAF0FF}
+
+  .ticker-wrap{overflow:hidden;background:#071E47;color:#fff}
+  .ticker{display:flex;gap:60px;white-space:nowrap;animation:ticker 32s linear infinite;padding:11px 0;font-size:13.5px;width:max-content}
+  @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+  .reveal{opacity:0;transform:translateY(30px);transition:all .8s cubic-bezier(.2,.7,.3,1)}
+  .reveal.visible{opacity:1;transform:none}
+
+  .prod-card{transition:.35s;position:relative;overflow:hidden}
+  .prod-card:hover{transform:translateY(-8px);box-shadow:0 25px 50px -12px rgba(10,42,98,.25);border-color:#E30613}
+  .prod-card:hover .prod-icon{transform:scale(1.1) rotate(-5deg);background:linear-gradient(135deg,#E30613,#FF6B2C);color:#fff}
+  .prod-card:hover .prod-icon i{color:#fff}
+  .prod-icon{transition:.35s}
+
+  .partner-logo{filter:grayscale(1);opacity:.75;transition:.3s}
+  .partner-logo:hover{filter:none;opacity:1;transform:translateY(-3px)}
+
+  .faq-item .faq-ans{max-height:0;overflow:hidden;transition:max-height .45s ease,opacity .35s ease;opacity:0}
+  .faq-item.open .faq-ans{max-height:340px;opacity:1}
+  .faq-item.open .faq-arrow{transform:rotate(180deg)}
+  .faq-item.open{border-color:#E30613;box-shadow:0 10px 30px -10px rgba(227,6,19,.2)}
+
+  input,select,textarea{outline:none;font-family:'Plus Jakarta Sans',sans-serif}
+  input:focus,select:focus,textarea:focus{border-color:#1656D6!important;box-shadow:0 0 0 3px rgba(22,86,214,.12)}
+  input[type=range]{-webkit-appearance:none;appearance:none;height:6px;border-radius:10px;background:linear-gradient(90deg,#E30613 var(--fill,50%),#E5E9F5 var(--fill,50%));width:100%}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:#fff;border:4px solid #E30613;box-shadow:0 4px 12px rgba(227,6,19,.4);cursor:pointer}
+  input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;border:4px solid #E30613;cursor:pointer}
+
+  .modal-bg{background:rgba(7,30,71,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+  .dot{width:10px;height:10px;border-radius:99px;background:rgba(255,255,255,.4);cursor:pointer;transition:.3s;display:block}
+  .dot.active{width:34px;background:#fff}
+
+  .t-card{min-width:100%;transition:transform .6s cubic-bezier(.2,.7,.3,1)}
+  .chat-msg{animation:chatIn .3s ease}
+  @keyframes chatIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .toast{animation:toastIn .4s cubic-bezier(.2,.9,.3,1.2)}
+  @keyframes toastIn{from{opacity:0;transform:translateX(60px)}to{opacity:1;transform:none}}
+
+  .pulse-ring{position:relative}
+  .pulse-ring:before{content:'';position:absolute;inset:-4px;border-radius:99px;border:2px solid #25D366;animation:ring 1.6s ease-out infinite}
+  @keyframes ring{0%{transform:scale(.9);opacity:1}100%{transform:scale(1.35);opacity:0}}
+
+  .step-dot{width:34px;height:34px;min-width:34px;border-radius:99px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;background:#E5E9F5;color:#7A8BB5;transition:.3s}
+  .step.active .step-dot{background:linear-gradient(135deg,#E30613,#FF6B2C);color:#fff;box-shadow:0 6px 15px rgba(227,6,19,.4)}
+  .step.done .step-dot{background:#0AA06E;color:#fff}
+
+  .timeline-line{position:absolute;left:19px;top:40px;bottom:0;width:3px;background:#E5E9F5;border-radius:10px}
+
+  .shine{position:relative;overflow:hidden}
+  .shine:after{content:'';position:absolute;top:0;left:-80%;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:shine 3.8s infinite}
+  @keyframes shine{0%{left:-80%}60%,100%{left:130%}}
+
+  .marquee-logos{display:flex;gap:18px;width:max-content;animation:ticker 26s linear infinite}
+  .float-shape{position:absolute;border-radius:50%;filter:blur(60px);opacity:.32;pointer-events:none}
+
+  select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%230A2A62' stroke-width='3'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}
+
+  .grad-text{background:linear-gradient(90deg,#FFB800,#FF6B2C);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .no-scrollbar::-webkit-scrollbar{display:none}
+  .no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+
+  .float-y{animation:floaty 6s ease-in-out infinite}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+
+  .mobile-menu-open{max-height:75vh;overflow:auto}
+
+  @media (max-width:768px){
+    .ticker{font-size:12px;gap:36px}
+    .hero-slide .bg{background-position:center right}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.15s !important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP STRIP -->
+<div class="top-strip text-white text-[12.5px]">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+    <div class="flex items-center gap-4 flex-wrap">
+      <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-lunaGold"></i> IRDAI Broker Licence No: DB 592/18 | Valid till 2028</span>
+      <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-clock text-lunaGold"></i> Mon–Sat 9:30 AM – 6:30 PM</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="tel:18001203456" class="flex items-center gap-1.5 hover:text-lunaGold font-semibold"><i class="fa-solid fa-phone-volume"></i> 1800-120-3456 (Toll Free)</a>
+      <a href="mailto:care@lunainsurance.com" class="hidden sm:flex items-center gap-1.5 hover:text-lunaGold"><i class="fa-solid fa-envelope"></i> care@lunainsurance.com</a>
+      <div class="hidden md:flex items-center gap-2.5 ml-2">
+        <a href="#" aria-label="Facebook" class="w-6 h-6 rounded-full bg-white/15 flex items-center justify-center hover:bg-lunaRed transition"><i class="fa-brands fa-facebook-f text-[11px]"></i></a>
+        <a href="#" aria-label="X" class="w-6 h-6 rounded-full bg-white/15 flex items-center justify-center hover:bg-lunaRed transition"><i class="fa-brands fa-x-twitter text-[11px]"></i></a>
+        <a href="#" aria-label="LinkedIn" class="w-6 h-6 rounded-full bg-white/15 flex items-center justify-center hover:bg-lunaRed transition"><i class="fa-brands fa-linkedin-in text-[11px]"></i></a>
+        <a href="#" aria-label="Instagram" class="w-6 h-6 rounded-full bg-white/15 flex items-center justify-center hover:bg-lunaRed transition"><i class="fa-brands fa-instagram text-[11px]"></i></a>
+        <a href="#" aria-label="YouTube" class="w-6 h-6 rounded-full bg-white/15 flex items-center justify-center hover:bg-lunaRed transition"><i class="fa-brands fa-youtube text-[11px]"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="mainHeader" class="sticky top-0 z-50 bg-white/95 backdrop-blur-lg shadow-[0_4px_25px_-8px_rgba(10,42,98,0.2)]">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+    <a href="#home" class="flex items-center gap-2.5 shrink-0">
+      <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-lunaBlue via-lunaBright to-lunaBlue flex items-center justify-center shadow-lg relative overflow-hidden">
+        <i class="fa-solid fa-moon text-lunaGold text-xl"></i>
+        <span class="absolute -right-1 -bottom-1 w-5 h-5 bg-lunaRed rounded-tl-xl"></span>
+      </div>
+      <div class="leading-none">
+        <div class="text-[21px] md:text-[22px] font-extrabold tracking-tight text-lunaBlue">LUNA <span class="text-lunaRed">INSURANCE</span></div>
+        <div class="text-[9px] md:text-[10px] font-bold tracking-[2px] text-slate-500 uppercase mt-0.5">Brokers Pvt. Ltd. • Since 2009</div>
+      </div>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-6">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#products" class="nav-link">Products</a>
+      <a href="#renew" class="nav-link">Renew</a>
+      <a href="#claims" class="nav-link">Claims</a>
+      <a href="#calculator" class="nav-link">Calculator</a>
+      <a href="#posp" class="nav-link">Become POSP</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <button onclick="openSearch()" aria-label="Search" class="hidden sm:flex w-10 h-10 rounded-full bg-lunaLight items-center justify-center text-lunaBlue hover:bg-lunaBlue hover:text-white transition"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button onclick="openCallback()" class="hidden md:flex items-center gap-2 px-4 py-2.5 rounded-full border-2 border-lunaBlue text-lunaBlue text-sm font-bold hover:bg-lunaBlue hover:text-white transition"><i class="fa-solid fa-headset"></i> Callback</button>
+      <button onclick="scrollToQuote()" class="btn-primary text-white text-sm font-bold px-4 sm:px-5 py-2.5 rounded-full flex items-center gap-2"><i class="fa-solid fa-bolt"></i> <span class="hidden xs:inline">Get</span> Quote</button>
+      <button onclick="toggleMobile()" aria-label="Menu" class="lg:hidden w-10 h-10 rounded-xl bg-lunaBlue text-white flex items-center justify-center"><i id="menuIcon" class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="lg:hidden hidden border-t bg-white px-4 py-4 space-y-1 mobile-menu-open">
+    <a href="#home" onclick="closeMobile()" class="block px-4 py-3 rounded-xl font-bold hover:bg-lunaLight">Home</a>
+    <a href="#products" onclick="closeMobile()" class="block px-4 py-3 rounded-xl font-bold hover:bg-lunaLight">All Products</a>
+    <a href="#renew" onclick="closeMobile()" class="block px-4 py-3 rounded-xl font-bold hover:bg-lunaLight">Renew Policy</a>
+    <a href="#claims" onclick="closeMobile()" class="block px-4 py-3 rounded-xl font-bold hover:bg-lunaLight">Track Claim</a>
+    <a href="#calculator" onclick="closeMobile()" class="block px-4 py-3 rounded-xl font-bold hover:bg-lunaLight">Premium Calculator</a>
+    <a href="#posp" onclick="closeMobile()" class="block px-4 py-3 rounded-xl font-bold hover:bg-lunaLight">Become POSP Agent</a>
+    <a href="#contact" onclick="closeMobile()" class="block px-4 py-3 rounded-xl font-bold hover:bg-lunaLight">Contact Us</a>
+    <button onclick="closeMobile();openCallback()" class="w-full mt-2 btn-blue text-white font-bold py-3 rounded-xl">Request Callback</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="relative bg-lunaDeep overflow-hidden">
+  <div class="hero-slide active">
+    <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1600&auto=format&fit=crop')"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#071E47F2] via-[#0A2A62E0] to-[#0A2A6240]"></div>
+  </div>
+  <div class="hero-slide">
+    <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1600&auto=format&fit=crop')"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#071E47F2] via-[#0A2A62E0] to-[#0A2A6240]"></div>
+  </div>
+  <div class="hero-slide">
+    <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop')"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#071E47F2] via-[#0A2A62E0] to-[#0A2A6240]"></div>
+  </div>
+
+  <div class="float-shape w-[320px] h-[320px] bg-lunaRed -top-24 -right-24"></div>
+  <div class="float-shape w-[280px] h-[280px] bg-lunaGold bottom-0 left-1/3"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 py-10 lg:py-14 grid lg:grid-cols-[1.05fr_.95fr] gap-8 lg:gap-10 items-center">
+    <!-- Left -->
+    <div class="text-white">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3 sm:px-4 py-1.5 text-[12px] sm:text-[13px] font-semibold">
+        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Trusted by 12,00,000+ Indian Families
+        <span class="bg-lunaGold text-lunaDeep text-[11px] font-extrabold px-2 py-0.5 rounded-full">4.8★</span>
+      </div>
+
+      <div id="heroTextWrap" class="mt-5 min-h-[176px] sm:min-h-[190px]">
+        <h1 id="heroTitle" class="text-[30px] sm:text-4xl md:text-5xl xl:text-[56px] font-extrabold leading-[1.08] tracking-tight">
+          India's Most Trusted <span class="grad-text">Insurance</span> Partner
+        </h1>
+        <p id="heroSub" class="mt-4 text-blue-100 text-[15px] md:text-lg max-w-xl leading-relaxed">
+          Compare 42+ top insurers. Save up to 45% on Car, Health, Term &amp; more. 98.2% claim settlement with a dedicated claim manager.
+        </p>
+      </div>
+
+      <div class="mt-6 flex flex-wrap gap-2.5">
+        <div class="flex items-center gap-2 bg-white/10 border border-white/15 rounded-2xl px-4 py-2.5 text-[13px] font-semibold"><i class="fa-solid fa-badge-check text-green-400"></i> IRDAI Licensed Broker</div>
+        <div class="flex items-center gap-2 bg-white/10 border border-white/15 rounded-2xl px-4 py-2.5 text-[13px] font-semibold"><i class="fa-solid fa-hand-holding-heart text-lunaGold"></i> Free Claim Assistance</div>
+        <div class="flex items-center gap-2 bg-white/10 border border-white/15 rounded-2xl px-4 py-2.5 text-[13px] font-semibold"><i class="fa-solid fa-percent text-lunaOrange"></i> Up to 45% Savings</div>
+      </div>
+
+      <div class="mt-7 flex flex-wrap items-center gap-x-5 gap-y-4">
+        <div class="flex items-center gap-5">
+          <div class="flex -space-x-3">
+            <img loading="lazy" src="https://i.pravatar.cc/80?img=12" class="w-11 h-11 rounded-full border-2 border-white object-cover" alt="Customer">
+            <img loading="lazy" src="https://i.pravatar.cc/80?img=32" class="w-11 h-11 rounded-full border-2 border-white object-cover" alt="Customer">
+            <img loading="lazy" src="https://i.pravatar.cc/80?img=45" class="w-11 h-11 rounded-full border-2 border-white object-cover" alt="Customer">
+            <img loading="lazy" src="https://i.pravatar.cc/80?img=56" class="w-11 h-11 rounded-full border-2 border-white object-cover" alt="Customer">
+            <span class="w-11 h-11 rounded-full border-2 border-white bg-lunaRed text-white text-[11px] font-extrabold flex items-center justify-center">12L+</span>
+          </div>
+          <div class="text-sm">
+            <div class="text-lunaGold font-bold tracking-wide">★★★★★ 4.8/5</div>
+            <div class="text-blue-100">28,400+ Google Reviews</div>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-2">
+          <button onclick="heroGo(-1)" aria-label="Previous slide" class="w-11 h-11 rounded-full border border-white/30 text-white hover:bg-white hover:text-lunaBlue transition"><i class="fa-solid fa-arrow-left"></i></button>
+          <button onclick="heroGo(1)" aria-label="Next slide" class="w-11 h-11 rounded-full bg-white text-lunaBlue hover:bg-lunaGold hover:text-lunaDeep transition"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="mt-6 flex gap-2" id="heroDots"></div>
+    </div>
+
+    <!-- Quote Widget -->
+    <div id="quoteBox" class="bg-white rounded-3xl shadow-2xl overflow-hidden scroll-mt-28">
+      <div class="bg-gradient-to-r from-lunaBlue to-lunaBright px-5 py-4 flex items-center justify-between">
+        <div>
+          <h3 class="text-white font-extrabold text-lg leading-none">Get Instant Quote</h3>
+          <p class="text-blue-200 text-xs mt-1">Compare &amp; save in 60 seconds • No spam calls</p>
+        </div>
+        <div class="w-11 h-11 rounded-2xl bg-white/15 flex items-center justify-center shrink-0"><i class="fa-solid fa-file-invoice-dollar text-lunaGold text-xl"></i></div>
+      </div>
+
+      <div class="px-3 sm:px-4 pt-4 flex gap-2 overflow-x-auto pb-1 no-scrollbar" id="quoteTabs">
+        <button data-tab="car" class="quote-tab active flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-100 text-[13px] font-bold"><i class="fa-solid fa-car"></i> Car</button>
+        <button data-tab="bike" class="quote-tab flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-100 text-[13px] font-bold"><i class="fa-solid fa-motorcycle"></i> Bike</button>
+        <button data-tab="health" class="quote-tab flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-100 text-[13px] font-bold"><i class="fa-solid fa-heart-pulse"></i> Health</button>
+        <button data-tab="term" class="quote-tab flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-100 text-[13px] font-bold"><i class="fa-solid fa-user-shield"></i> Term</button>
+        <button data-tab="travel" class="quote-tab flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-100 text-[13px] font-bold"><i class="fa-solid fa-plane"></i> Travel</button>
+        <button data-tab="home" class="quote-tab flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-100 text-[13px] font-bold"><i class="fa-solid fa-house"></i> Home</button>
+      </div>
+
+      <div class="p-4 sm:p-5">
+        <!-- CAR -->
+        <form id="form-car" class="quote-form grid grid-cols-2 gap-3">
+          <div class="col-span-2">
+            <label class="text-xs font-bold text-slate-500">VEHICLE NUMBER</label>
+            <input id="carNo" placeholder="e.g. DL 01 AB 1234" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-4 py-2.5 font-bold uppercase placeholder:normal-case placeholder:font-medium">
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">BRAND</label>
+            <select id="carBrand" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>Maruti Suzuki</option><option>Hyundai</option><option>Tata</option><option>Mahindra</option><option>Honda</option><option>Toyota</option><option>Kia</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">MODEL</label>
+            <select id="carModel" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>Swift VXI</option><option>Creta SX</option><option>Nexon XM</option><option>XUV700 AX5</option><option>Baleno Zeta</option><option>Seltos HTK</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">REG. YEAR</label>
+            <select id="carYear" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option><option>2019</option><option>2018</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">NCB %</label>
+            <select id="carNcb" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option value="0">0% (New/Claim)</option><option value="20">20%</option><option value="25">25%</option><option value="35">35%</option><option value="45">45%</option><option value="50">50%</option>
+            </select>
+          </div>
+          <div class="col-span-2">
+            <label class="text-xs font-bold text-slate-500">MOBILE NUMBER</label>
+            <div class="mt-1 flex">
+              <span class="border-2 border-r-0 border-slate-200 rounded-l-xl px-3 py-2.5 bg-slate-50 font-bold text-sm">+91</span>
+              <input id="carMobile" maxlength="10" inputmode="numeric" placeholder="10-digit mobile" class="w-full border-2 border-slate-200 rounded-r-xl px-4 py-2.5 font-semibold">
+            </div>
+          </div>
+          <button type="submit" class="col-span-2 btn-primary text-white font-extrabold py-3 rounded-xl shine"><i class="fa-solid fa-magnifying-glass-chart mr-1"></i> View 24 Plans from ₹2,199</button>
+        </form>
+
+        <!-- BIKE -->
+        <form id="form-bike" class="quote-form hidden grid-cols-2 gap-3">
+          <div class="col-span-2">
+            <label class="text-xs font-bold text-slate-500">BIKE NUMBER</label>
+            <input id="bikeNo" placeholder="e.g. MH 02 CD 5678" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-4 py-2.5 font-bold uppercase">
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">BRAND</label>
+            <select class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>Hero</option><option>Honda</option><option>Bajaj</option><option>TVS</option><option>Royal Enfield</option><option>Yamaha</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">CC</label>
+            <select id="bikeCc" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option value="100">Up to 150cc</option><option value="200">150-350cc</option><option value="400">350cc+</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">REG. YEAR</label>
+            <select id="bikeYear" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">POLICY TYPE</label>
+            <select class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>Comprehensive</option><option>Third Party</option><option>Own Damage</option>
+            </select>
+          </div>
+          <div class="col-span-2">
+            <label class="text-xs font-bold text-slate-500">MOBILE</label>
+            <div class="mt-1 flex">
+              <span class="border-2 border-r-0 border-slate-200 rounded-l-xl px-3 py-2.5 bg-slate-50 font-bold text-sm">+91</span>
+              <input id="bikeMobile" maxlength="10" inputmode="numeric" placeholder="10-digit mobile" class="w-full border-2 border-slate-200 rounded-r-xl px-4 py-2.5 font-semibold">
+            </div>
+          </div>
+          <button type="submit" class="col-span-2 btn-primary text-white font-extrabold py-3 rounded-xl shine">View 18 Plans from ₹538</button>
+        </form>
+
+        <!-- HEALTH -->
+        <form id="form-health" class="quote-form hidden grid-cols-2 gap-3">
+          <div>
+            <label class="text-xs font-bold text-slate-500">YOUR AGE</label>
+            <select id="healthAge" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>25</option><option>30</option><option>35</option><option>40</option><option>45</option><option>50</option><option>55</option><option>60</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">COVER AMOUNT</label>
+            <select id="healthCover" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option value="500000">₹5 Lakh</option><option value="1000000" selected>₹10 Lakh</option><option value="2500000">₹25 Lakh</option><option value="5000000">₹50 Lakh</option><option value="10000000">₹1 Crore</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">MEMBERS</label>
+            <select id="healthMembers" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option value="1">Self</option><option value="2">Self + Spouse</option><option value="3">Self + Spouse + 1 Kid</option><option value="4">Family of 4</option><option value="6">Family of 6</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">CITY</label>
+            <select class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>Delhi NCR</option><option>Mumbai</option><option>Bengaluru</option><option>Chennai</option><option>Hyderabad</option><option>Kolkata</option><option>Other</option>
+            </select>
+          </div>
+          <div class="col-span-2">
+            <label class="text-xs font-bold text-slate-500">MOBILE</label>
+            <div class="mt-1 flex">
+              <span class="border-2 border-r-0 border-slate-200 rounded-l-xl px-3 py-2.5 bg-slate-50 font-bold text-sm">+91</span>
+              <input id="healthMobile" maxlength="10" inputmode="numeric" placeholder="10-digit mobile" class="w-full border-2 border-slate-200 rounded-r-xl px-4 py-2.5 font-semibold">
+            </div>
+          </div>
+          <button type="submit" class="col-span-2 btn-primary text-white font-extrabold py-3 rounded-xl shine">View 32 Health Plans from ₹485/mo</button>
+        </form>
+
+        <!-- TERM -->
+        <form id="form-term" class="quote-form hidden grid-cols-2 gap-3">
+          <div>
+            <label class="text-xs font-bold text-slate-500">AGE</label>
+            <select id="termAge" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>25</option><option selected>30</option><option>35</option><option>40</option><option>45</option><option>50</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">LIFE COVER</label>
+            <select id="termCover" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option value="5000000">₹50 Lakh</option><option value="10000000" selected>₹1 Crore</option><option value="20000000">₹2 Crore</option><option value="50000000">₹5 Crore</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">TOBACCO?</label>
+            <select id="termSmoke" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option value="no">No</option><option value="yes">Yes</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">TERM (YEARS)</label>
+            <select id="termYears" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>20</option><option selected>30</option><option>40</option>
+            </select>
+          </div>
+          <div class="col-span-2">
+            <label class="text-xs font-bold text-slate-500">MOBILE</label>
+            <div class="mt-1 flex">
+              <span class="border-2 border-r-0 border-slate-200 rounded-l-xl px-3 py-2.5 bg-slate-50 font-bold text-sm">+91</span>
+              <input id="termMobile" maxlength="10" inputmode="numeric" placeholder="10-digit mobile" class="w-full border-2 border-slate-200 rounded-r-xl px-4 py-2.5 font-semibold">
+            </div>
+          </div>
+          <button type="submit" class="col-span-2 btn-primary text-white font-extrabold py-3 rounded-xl shine">View Term Plans from ₹490/mo</button>
+        </form>
+
+        <!-- TRAVEL -->
+        <form id="form-travel" class="quote-form hidden grid-cols-2 gap-3">
+          <div>
+            <label class="text-xs font-bold text-slate-500">DESTINATION</label>
+            <select id="travelDest" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>USA &amp; Canada</option><option>Europe (Schengen)</option><option>UK</option><option>UAE / Dubai</option><option>Thailand / Asia</option><option>Worldwide</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">TRIP DAYS</label>
+            <select id="travelDays" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>7 Days</option><option selected>15 Days</option><option>30 Days</option><option>60 Days</option><option>90 Days</option><option>Annual Multi-trip</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">TRAVELLERS</label>
+            <select id="travelCount" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>1 Adult</option><option>2 Adults</option><option>2 Adults + 1 Kid</option><option>2 Adults + 2 Kids</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">ELDEST AGE</label>
+            <select class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>30</option><option>40</option><option>50</option><option>60</option><option>70</option>
+            </select>
+          </div>
+          <div class="col-span-2">
+            <label class="text-xs font-bold text-slate-500">MOBILE</label>
+            <div class="mt-1 flex">
+              <span class="border-2 border-r-0 border-slate-200 rounded-l-xl px-3 py-2.5 bg-slate-50 font-bold text-sm">+91</span>
+              <input id="travelMobile" maxlength="10" inputmode="numeric" placeholder="10-digit mobile" class="w-full border-2 border-slate-200 rounded-r-xl px-4 py-2.5 font-semibold">
+            </div>
+          </div>
+          <button type="submit" class="col-span-2 btn-primary text-white font-extrabold py-3 rounded-xl shine">View Travel Plans from ₹299</button>
+        </form>
+
+        <!-- HOME -->
+        <form id="form-home" class="quote-form hidden grid-cols-2 gap-3">
+          <div>
+            <label class="text-xs font-bold text-slate-500">PROPERTY VALUE</label>
+            <select id="homeValue" class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>₹25 Lakh</option><option selected>₹50 Lakh</option><option>₹75 Lakh</option><option>₹1 Crore</option><option>₹2 Crore+</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-500">PROPERTY TYPE</label>
+            <select class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>Apartment / Flat</option><option>Independent House</option><option>Villa</option><option>Rented (Contents only)</option>
+            </select>
+          </div>
+          <div class="col-span-2">
+            <label class="text-xs font-bold text-slate-500">CITY</label>
+            <select class="mt-1 w-full border-2 border-slate-200 rounded-xl px-3 py-2.5 font-semibold text-sm">
+              <option>Delhi NCR</option><option>Mumbai</option><option>Bengaluru</option><option>Chennai</option><option>Other Metro</option>
+            </select>
+          </div>
+          <div class="col-span-2">
+            <label class="text-xs font-bold text-slate-500">MOBILE</label>
+            <div class="mt-1 flex">
+              <span class="border-2 border-r-0 border-slate-200 rounded-l-xl px-3 py-2.5 bg-slate-50 font-bold text-sm">+91</span>
+              <input id="homeMobile" maxlength="10" inputmode="numeric" placeholder="10-digit mobile" class="w-full border-2 border-slate-200 rounded-r-xl px-4 py-2.5 font-semibold">
+            </div>
+          </div>
+          <button type="submit" class="col-span-2 btn-primary text-white font-extrabold py-3 rounded-xl shine">View Home Plans from ₹1,999/yr</button>
+        </form>
+
+        <p class="text-[11px] text-slate-400 text-center mt-3 flex items-center justify-center gap-1"><i class="fa-solid fa-lock"></i> 100% Secure • By continuing you agree to our <a href="#" class="underline">Terms</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap border-y border-white/10">
+  <div class="ticker font-semibold" id="tickerRow">
+    <span><i class="fa-solid fa-triangle-exclamation text-lunaGold"></i> BEWARE OF SPURIOUS PHONE CALLS &amp; FICTITIOUS OFFERS — IRDAI is not involved in selling insurance or announcing bonuses.</span>
+    <span><i class="fa-solid fa-gift text-lunaGold"></i> FESTIVE OFFER: Up to 45% OFF on Car Insurance + Free Zero-Dep Add-on worth ₹2,499</span>
+    <span><i class="fa-solid fa-heart-pulse text-lunaGold"></i> Health Insurance: ₹1 Cr cover starting @ ₹835/month • No medical test up to age 45</span>
+    <span><i class="fa-solid fa-shield-halved text-lunaGold"></i> Term Insurance: ₹1 Cr Life Cover @ ₹490/month • 99.2% Claim Settlement Ratio</span>
+    <span><i class="fa-solid fa-car-side text-lunaGold"></i> 7,500+ Cashless Garages • 10,000+ Cashless Hospitals • 24×7 Claim Support</span>
+  </div>
+</div>
+
+<!-- STATS BAND -->
+<section class="bg-white border-b">
+  <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="flex items-center gap-4 reveal">
+      <div class="w-14 h-14 rounded-2xl bg-lunaLight flex items-center justify-center text-lunaBright text-2xl"><i class="fa-solid fa-award"></i></div>
+      <div>
+        <div class="text-2xl font-extrabold text-lunaBlue"><span class="counter" data-target="16">0</span>+ Yrs</div>
+        <div class="text-sm text-slate-500 font-medium">Insurance Expertise</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-4 reveal">
+      <div class="w-14 h-14 rounded-2xl bg-lunaMint flex items-center justify-center text-green-600 text-2xl"><i class="fa-solid fa-users"></i></div>
+      <div>
+        <div class="text-2xl font-extrabold text-lunaBlue"><span class="counter" data-target="12">0</span>L+</div>
+        <div class="text-sm text-slate-500 font-medium">Happy Customers</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-4 reveal">
+      <div class="w-14 h-14 rounded-2xl bg-red-50 flex items-center justify-center text-lunaRed text-2xl"><i class="fa-solid fa-handshake"></i></div>
+      <div>
+        <div class="text-2xl font-extrabold text-lunaBlue"><span class="counter" data-target="42">0</span>+</div>
+        <div class="text-sm text-slate-500 font-medium">Insurer Partners</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-4 reveal">
+      <div class="w-14 h-14 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-500 text-2xl"><i class="fa-solid fa-circle-check"></i></div>
+      <div>
+        <div class="text-2xl font-extrabold text-lunaBlue"><span class="counter" data-target="98" data-decimal="1">0</span>%</div>
+        <div class="text-sm text-slate-500 font-medium">Claim Settlement*</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="max-w-7xl mx-auto px-4 py-14 scroll-mt-24">
+  <div class="text-center max-w-2xl mx-auto reveal">
+    <span class="inline-block bg-red-50 text-lunaRed text-xs font-extrabold tracking-widest uppercase px-4 py-1.5 rounded-full border border-red-100">Our Products</span>
+    <h2 class="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">One Platform. <span class="text-lunaRed">Every Protection</span> You Need</h2>
+    <p class="text-slate-500 mt-3">Compare plans from 42+ IRDAI-approved insurers and buy in minutes with expert guidance.</p>
+  </div>
+  <div class="mt-9 grid sm:grid-cols-2 lg:grid-cols-4 gap-5" id="productGrid"></div>
+</section>
+
+<!-- RENEW + CLAIM -->
+<section id="renew" class="bg-gradient-to-br from-lunaDeep via-lunaBlue to-lunaBright relative overflow-hidden scroll-mt-24">
+  <div class="float-shape w-80 h-80 bg-lunaOrange top-0 right-10"></div>
+  <div class="max-w-7xl mx-auto px-4 py-14 grid lg:grid-cols-2 gap-6 relative">
+    <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-2xl reveal">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-lunaBlue to-lunaBright text-white flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-rotate-right"></i></div>
+        <div>
+          <h3 class="font-extrabold text-xl">Renew Existing Policy</h3>
+          <p class="text-sm text-slate-500">Renew in 2 minutes • Keep your NCB up to 50%</p>
+        </div>
+      </div>
+      <div class="mt-5 flex flex-col sm:flex-row gap-3">
+        <input id="renewInput" placeholder="Vehicle No. / Policy No. (e.g. DL01AB1234)" class="flex-1 border-2 border-slate-200 rounded-xl px-4 py-3 font-bold uppercase">
+        <button onclick="lookupRenew()" class="btn-blue text-white font-bold px-6 py-3 rounded-xl whitespace-nowrap">Fetch Policy</button>
+      </div>
+      <div id="renewResult" class="mt-4 hidden"></div>
+      <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-[13px] text-slate-500 font-semibold">
+        <span><i class="fa-solid fa-check text-green-500 mr-1"></i> No inspection needed</span>
+        <span><i class="fa-solid fa-check text-green-500 mr-1"></i> Instant soft copy</span>
+      </div>
+    </div>
+
+    <div id="claims" class="bg-white rounded-3xl p-6 sm:p-7 shadow-2xl reveal scroll-mt-24">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-lunaRed to-lunaOrange text-white flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-file-circle-check"></i></div>
+        <div>
+          <h3 class="font-extrabold text-xl">Track Your Claim</h3>
+          <p class="text-sm text-slate-500">Live status • Dedicated claim manager on call</p>
+        </div>
+      </div>
+      <div class="mt-5 flex flex-col sm:flex-row gap-3">
+        <input id="claimInput" placeholder="Claim ID (e.g. LUNA/CL/88214)" class="flex-1 border-2 border-slate-200 rounded-xl px-4 py-3 font-bold uppercase">
+        <button onclick="trackClaim()" class="btn-primary text-white font-bold px-6 py-3 rounded-xl whitespace-nowrap">Track Status</button>
+      </div>
+      <div id="claimResult" class="mt-4 hidden"></div>
+      <div class="mt-4 flex items-center gap-2 text-[13px] font-bold text-lunaRed bg-red-50 border border-red-100 rounded-xl px-4 py-2.5">
+        <i class="fa-solid fa-phone-volume"></i> Claim Emergency? Call 1800-120-3456 (24×7)
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY LUNA -->
+<section class="max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+  <div class="relative reveal">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=900&auto=format&fit=crop" class="rounded-3xl shadow-2xl w-full h-[320px] sm:h-[460px] object-cover" alt="Insurance advisor">
+    <div class="absolute -bottom-6 right-2 sm:right-6 bg-white rounded-2xl shadow-2xl p-4 sm:p-5 flex items-center gap-4 border">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-lunaRed to-lunaOrange text-white flex items-center justify-center text-2xl font-extrabold">16</div>
+      <div>
+        <div class="font-extrabold">Years of Trust</div>
+        <div class="text-sm text-slate-500">Serving since 2009</div>
+      </div>
+    </div>
+    <div class="absolute top-5 left-2 sm:left-5 bg-white/95 rounded-2xl shadow-xl px-4 sm:px-5 py-3 flex items-center gap-3 border float-y">
+      <span class="w-10 h-10 rounded-full bg-green-100 text-green-600 flex items-center justify-center"><i class="fa-solid fa-check"></i></span>
+      <div>
+        <div class="font-extrabold text-sm">Claim Settled</div>
+        <div class="text-xs text-slate-500">₹4,85,000 • 6 days</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal">
+    <span class="inline-block bg-blue-50 text-lunaBright text-xs font-extrabold tracking-widest uppercase px-4 py-1.5 rounded-full border border-blue-100">Why Luna Insurance</span>
+    <h2 class="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight leading-tight">Insurance Buying, <span class="text-lunaBright">Simplified &amp; Honest</span></h2>
+    <p class="text-slate-500 mt-4 leading-relaxed">As an IRDAI-licensed insurance broker (not an agent of one company), we work for <b class="text-lunaBlue">YOU</b> — comparing every insurer objectively to get you maximum cover at minimum price.</p>
+
+    <div class="mt-6 grid sm:grid-cols-2 gap-4">
+      <div class="flex gap-3 bg-white border rounded-2xl p-4 hover:shadow-lg transition">
+        <span class="w-11 h-11 shrink-0 rounded-xl bg-lunaLight text-lunaBright flex items-center justify-center text-lg"><i class="fa-solid fa-scale-balanced"></i></span>
+        <div><div class="font-bold text-[15px]">Unbiased Comparison</div><div class="text-[13px] text-slate-500">42+ insurers compared transparently</div></div>
+      </div>
+      <div class="flex gap-3 bg-white border rounded-2xl p-4 hover:shadow-lg transition">
+        <span class="w-11 h-11 shrink-0 rounded-xl bg-lunaMint text-green-600 flex items-center justify-center text-lg"><i class="fa-solid fa-user-tie"></i></span>
+        <div><div class="font-bold text-[15px]">Claim Manager</div><div class="text-[13px] text-slate-500">Personal manager till settlement</div></div>
+      </div>
+      <div class="flex gap-3 bg-white border rounded-2xl p-4 hover:shadow-lg transition">
+        <span class="w-11 h-11 shrink-0 rounded-xl bg-red-50 text-lunaRed flex items-center justify-center text-lg"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+        <div><div class="font-bold text-[15px]">Lowest Price Promise</div><div class="text-[13px] text-slate-500">Found cheaper? We refund 2× diff.</div></div>
+      </div>
+      <div class="flex gap-3 bg-white border rounded-2xl p-4 hover:shadow-lg transition">
+        <span class="w-11 h-11 shrink-0 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg"><i class="fa-solid fa-headset"></i></span>
+        <div><div class="font-bold text-[15px]">Support in 8 Languages</div><div class="text-[13px] text-slate-500">Hindi, English, Tamil &amp; more</div></div>
+      </div>
+    </div>
+
+    <div class="mt-6 flex flex-wrap gap-3">
+      <button onclick="scrollToQuote()" class="btn-primary text-white font-bold px-7 py-3 rounded-full">Compare Plans Now</button>
+      <button onclick="openCallback()" class="px-7 py-3 rounded-full font-bold border-2 border-lunaBlue text-lunaBlue hover:bg-lunaBlue hover:text-white transition">Talk to Expert</button>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="bg-lunaLight/60 border-y">
+  <div class="max-w-7xl mx-auto px-4 py-14">
+    <div class="text-center reveal">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Buy Insurance in <span class="text-lunaRed">4 Easy Steps</span></h2>
+      <p class="text-slate-500 mt-2">100% paperless • Policy in your inbox within 10 minutes</p>
+    </div>
+    <div class="mt-9 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bg-white rounded-2xl p-6 text-center border hover:shadow-card transition reveal">
+        <div class="w-14 h-14 mx-auto rounded-2xl bg-lunaBlue text-white flex items-center justify-center text-xl font-extrabold">1</div>
+        <h4 class="font-extrabold mt-4">Enter Details</h4>
+        <p class="text-sm text-slate-500 mt-1">Vehicle, age or travel details in 30 seconds</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 text-center border hover:shadow-card transition reveal">
+        <div class="w-14 h-14 mx-auto rounded-2xl bg-lunaBright text-white flex items-center justify-center text-xl font-extrabold">2</div>
+        <h4 class="font-extrabold mt-4">Compare Plans</h4>
+        <p class="text-sm text-slate-500 mt-1">Side-by-side price, cover &amp; claim ratio</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 text-center border hover:shadow-card transition reveal">
+        <div class="w-14 h-14 mx-auto rounded-2xl bg-lunaOrange text-white flex items-center justify-center text-xl font-extrabold">3</div>
+        <h4 class="font-extrabold mt-4">Pay Securely</h4>
+        <p class="text-sm text-slate-500 mt-1">UPI, cards, netbanking &amp; EMI options</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 text-center border hover:shadow-card transition reveal">
+        <div class="w-14 h-14 mx-auto rounded-2xl bg-green-600 text-white flex items-center justify-center text-xl font-extrabold">4</div>
+        <h4 class="font-extrabold mt-4">Get Policy Instantly</h4>
+        <p class="text-sm text-slate-500 mt-1">E-policy on email + WhatsApp in 10 min</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR PLANS -->
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <div class="flex flex-wrap items-end justify-between gap-4 reveal">
+    <div>
+      <span class="inline-block bg-red-50 text-lunaRed text-xs font-extrabold tracking-widest uppercase px-4 py-1.5 rounded-full border border-red-100">Best Sellers</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold mt-3">Most Loved Plans <span class="text-slate-400 text-xl font-semibold">this month</span></h2>
+    </div>
+    <div class="flex gap-2 bg-slate-100 p-1.5 rounded-full" id="planTabs">
+      <button data-p="health" class="plan-tab px-5 py-2 rounded-full text-sm font-bold bg-lunaBlue text-white transition">Health</button>
+      <button data-p="term" class="plan-tab px-5 py-2 rounded-full text-sm font-bold text-slate-600 transition">Term Life</button>
+      <button data-p="motor" class="plan-tab px-5 py-2 rounded-full text-sm font-bold text-slate-600 transition">Motor</button>
+    </div>
+  </div>
+
+  <div id="plansGrid" class="mt-7 grid md:grid-cols-3 gap-5"></div>
+
+  <div id="compareBar" class="hidden fixed bottom-24 left-1/2 -translate-x-1/2 z-40 bg-lunaDeep text-white rounded-full pl-5 pr-2 py-2 shadow-2xl items-center gap-3 border border-white/20 max-w-[92vw]">
+    <span id="compareCount" class="text-sm font-bold">2 plans selected</span>
+    <button onclick="openCompare()" class="btn-primary text-white text-sm font-bold px-5 py-2 rounded-full">Compare Now</button>
+    <button onclick="clearCompare()" aria-label="Clear comparison" class="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calculator" class="bg-gradient-to-br from-lunaDeep to-lunaBlue relative overflow-hidden scroll-mt-24">
+  <div class="float-shape w-96 h-96 bg-lunaBright top-10 left-10"></div>
+  <div class="max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-8 relative">
+    <div class="text-white reveal">
+      <span class="inline-block bg-white/10 border border-white/20 text-lunaGold text-xs font-extrabold tracking-widest uppercase px-4 py-1.5 rounded-full">Smart Calculator</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold mt-4 leading-tight">How Much Term Cover<br>Do You <span class="text-lunaGold">Really Need?</span></h2>
+      <p class="text-blue-200 mt-3">Drag the sliders — our engine estimates your ideal life cover (10–15× annual income + loans − assets).</p>
+
+      <div class="mt-6 space-y-5 bg-white/10 border border-white/15 rounded-3xl p-5 sm:p-6">
+        <div>
+          <div class="flex justify-between text-sm font-bold"><span>Your Age</span><span id="cAgeV" class="text-lunaGold">30 yrs</span></div>
+          <input id="cAge" type="range" min="18" max="60" value="30" class="w-full mt-2">
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-bold"><span>Annual Income</span><span id="cIncV" class="text-lunaGold">₹12 Lakh</span></div>
+          <input id="cInc" type="range" min="3" max="200" value="12" class="w-full mt-2">
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-bold"><span>Loans / Liabilities</span><span id="cLoanV" class="text-lunaGold">₹25 Lakh</span></div>
+          <input id="cLoan" type="range" min="0" max="200" value="25" class="w-full mt-2">
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-bold"><span>Policy Term</span><span id="cTermV" class="text-lunaGold">30 yrs</span></div>
+          <input id="cTerm" type="range" min="10" max="40" value="30" class="w-full mt-2">
+        </div>
+        <label class="flex items-center justify-between text-sm font-bold bg-white/10 rounded-xl px-4 py-3 cursor-pointer">
+          <span><i class="fa-solid fa-smoking mr-2 text-red-300"></i> Tobacco User?</span>
+          <input id="cSmoke" type="checkbox" class="w-5 h-5 accent-red-600">
+        </label>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center reveal">
+      <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-2xl">
+        <p class="text-sm font-bold text-slate-500 uppercase tracking-widest">Recommended Life Cover</p>
+        <h3 id="calcCover" class="text-[38px] sm:text-5xl font-extrabold text-lunaBlue mt-2">₹1.8 Cr</h3>
+
+        <div class="mt-4 bg-lunaLight rounded-2xl p-4 flex items-center justify-between gap-3">
+          <div>
+            <p class="text-xs font-bold text-slate-500">ESTIMATED PREMIUM</p>
+            <p class="text-2xl font-extrabold text-lunaRed"><span id="calcPrem">₹876</span><span class="text-sm text-slate-500 font-semibold">/month</span></p>
+          </div>
+          <div class="text-right">
+            <p class="text-xs font-bold text-slate-500">CLAIM RATIO</p>
+            <p class="text-lg font-extrabold text-green-600">99.2% ★</p>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="flex justify-between text-xs font-bold text-slate-500 mb-1.5"><span>Income Protection (12× income)</span><span id="b1v">₹1.44 Cr</span></div>
+          <div class="h-2.5 bg-slate-100 rounded-full overflow-hidden"><div id="b1" class="h-full bg-lunaBright rounded-full transition-all" style="width:70%"></div></div>
+          <div class="flex justify-between text-xs font-bold text-slate-500 mb-1.5 mt-3"><span>Loans Cover</span><span id="b2v">₹25 L</span></div>
+          <div class="h-2.5 bg-slate-100 rounded-full overflow-hidden"><div id="b2" class="h-full bg-lunaRed rounded-full transition-all" style="width:25%"></div></div>
+        </div>
+
+        <button onclick="buyPlan('Luna Term Secure+','custom')" class="mt-5 w-full btn-primary text-white font-extrabold py-3.5 rounded-xl shine">Buy This Cover Now <i class="fa-solid fa-arrow-right ml-1"></i></button>
+        <p class="text-center text-xs text-slate-400 mt-2">Free tele-medical • No paperwork • 30-day money-back</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="max-w-7xl mx-auto px-4 py-14 overflow-hidden">
+  <div class="text-center reveal">
+    <h2 class="text-3xl font-extrabold">Our <span class="text-lunaBright">42+ Insurance Partners</span></h2>
+    <p class="text-slate-500 mt-2">We are brokers — we bring every top insurer to one table for you</p>
+  </div>
+  <div class="mt-8 overflow-hidden relative">
+    <div class="marquee-logos" id="partnerRow"></div>
+  </div>
+  <div class="mt-6 grid grid-cols-3 md:grid-cols-6 gap-3" id="partnerGrid"></div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="bg-lunaDeep relative overflow-hidden">
+  <div class="float-shape w-96 h-96 bg-lunaBlue top-0 left-0"></div>
+  <div class="max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-[.9fr_1.1fr] gap-10 items-center">
+    <div class="text-white reveal">
+      <span class="inline-block bg-white/10 border border-white/20 text-lunaGold text-xs font-extrabold tracking-widest uppercase px-4 py-1.5 rounded-full">Customer Love</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold mt-4">12 Lakh+ Families<br>Sleep Peacefully <span class="text-lunaGold">With Luna</span></h2>
+      <div class="mt-5 flex items-center gap-4">
+        <div class="text-5xl font-extrabold">4.8</div>
+        <div>
+          <div class="text-lunaGold tracking-widest">★★★★★</div>
+          <div class="text-blue-200 text-sm">28,400+ verified Google reviews</div>
+        </div>
+      </div>
+      <div class="mt-6 flex gap-3">
+        <button onclick="tGo(-1)" aria-label="Previous review" class="w-12 h-12 rounded-full border border-white/30 hover:bg-white hover:text-lunaBlue transition text-white"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="tGo(1)" aria-label="Next review" class="w-12 h-12 rounded-full bg-lunaRed hover:bg-lunaOrange transition text-white"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="overflow-hidden reveal">
+      <div id="tTrack" class="flex"></div>
+    </div>
+  </div>
+</section>
+
+<!-- POSP -->
+<section id="posp" class="max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-8 items-stretch scroll-mt-24">
+  <div class="bg-gradient-to-br from-lunaRed to-lunaOrange rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden reveal">
+    <div class="float-shape w-64 h-64 bg-white top-0 right-0 !opacity-20"></div>
+    <span class="bg-white/20 text-xs font-extrabold tracking-widest uppercase px-4 py-1.5 rounded-full">POSP Program</span>
+    <h2 class="text-3xl md:text-4xl font-extrabold mt-4 leading-tight">Become a Luna Advisor.<br>Earn up to ₹85,000/month.</h2>
+    <ul class="mt-5 space-y-3 text-[15px] font-medium">
+      <li class="flex gap-3"><i class="fa-solid fa-circle-check mt-1"></i> Zero joining fee • 100% online training &amp; IRDAI certification</li>
+      <li class="flex gap-3"><i class="fa-solid fa-circle-check mt-1"></i> Sell 42+ insurers' policies with one app</li>
+      <li class="flex gap-3"><i class="fa-solid fa-circle-check mt-1"></i> Instant commission payout every week</li>
+      <li class="flex gap-3"><i class="fa-solid fa-circle-check mt-1"></i> Work from home • Full Hindi/English support</li>
+    </ul>
+    <div class="mt-6 bg-white/15 border border-white/25 rounded-2xl p-5">
+      <div class="flex justify-between text-sm font-bold gap-3">
+        <span>Policies/month: <span id="pospN" class="text-lunaGold">20</span></span>
+        <span>Avg. payout 18%</span>
+      </div>
+      <input id="pospRange" type="range" min="5" max="100" value="20" class="w-full mt-3">
+      <div class="mt-3 flex flex-wrap items-center justify-between gap-2">
+        <span class="text-sm font-semibold text-white/80">Your estimated monthly income</span>
+        <span id="pospIncome" class="text-3xl font-extrabold">₹36,000</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white border rounded-3xl p-6 sm:p-8 shadow-card reveal">
+    <h3 class="text-2xl font-extrabold">Apply for POSP in 60 Seconds</h3>
+    <p class="text-sm text-slate-500 mt-1">Our onboarding team calls within 2 working hours.</p>
+    <form id="pospForm" class="mt-5 grid sm:grid-cols-2 gap-3">
+      <input required placeholder="Full Name *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+      <input required maxlength="10" inputmode="numeric" pattern="[0-9]{10}" title="10 digit mobile" placeholder="Mobile Number *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+      <input required type="email" placeholder="Email ID *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+      <input required placeholder="City *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+      <input required maxlength="10" placeholder="PAN Number *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold uppercase">
+      <select class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+        <option>Fresher</option><option>1-3 Years Experience</option><option>3+ Years Experience</option><option>Existing Agent</option>
+      </select>
+      <label class="sm:col-span-2 flex items-start gap-2 text-xs text-slate-500">
+        <input type="checkbox" required class="mt-1 accent-red-600"> I agree to be contacted by Luna Insurance &amp; accept Terms, POSP guidelines and IRDAI norms.
+      </label>
+      <button class="sm:col-span-2 btn-blue text-white font-extrabold py-3.5 rounded-xl">Submit Application <i class="fa-solid fa-paper-plane ml-1"></i></button>
+    </form>
+    <div class="mt-4 flex items-center gap-3 text-sm font-bold text-green-700 bg-green-50 border border-green-200 rounded-xl px-4 py-3">
+      <i class="fa-solid fa-users text-xl"></i> 48,000+ POSP advisors already earning with Luna
+    </div>
+  </div>
+</section>
+
+<!-- BLOG + FAQ -->
+<section class="bg-lunaLight/60 border-y">
+  <div class="max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-10">
+    <div class="reveal">
+      <h2 class="text-3xl font-extrabold">Insurance <span class="text-lunaRed">Gyaan Center</span></h2>
+      <p class="text-slate-500 text-sm mt-1">Simple guides in easy language — no jargon.</p>
+      <div class="mt-6 space-y-4" id="blogList"></div>
+    </div>
+
+    <div class="reveal">
+      <h2 class="text-3xl font-extrabold">Frequently Asked <span class="text-lunaBright">Questions</span></h2>
+      <div class="mt-4 relative">
+        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+        <input id="faqSearch" oninput="filterFaq()" placeholder="Search questions... e.g. claim, NCB, refund" class="w-full border-2 border-slate-200 rounded-xl pl-11 pr-4 py-3 text-sm font-medium bg-white">
+      </div>
+      <div class="mt-4 space-y-3" id="faqList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- APP CTA -->
+<section class="max-w-7xl mx-auto px-4 py-14">
+  <div class="bg-gradient-to-r from-lunaBlue via-lunaBright to-lunaBlue rounded-3xl p-6 sm:p-10 md:p-12 grid md:grid-cols-2 gap-8 items-center relative overflow-hidden reveal">
+    <div class="float-shape w-72 h-72 bg-lunaGold -top-10 -left-10"></div>
+    <div class="text-white relative">
+      <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">Manage All Policies in One <span class="text-lunaGold">Luna App</span></h2>
+      <p class="text-blue-100 mt-3">Renewals, claims, garage locator, policy wallet &amp; 24×7 chat — everything in your pocket.</p>
+      <div class="mt-5 flex flex-wrap gap-3">
+        <button onclick="toast('Opening Google Play Store...','success')" class="bg-white text-lunaBlue font-bold px-5 py-3 rounded-2xl flex items-center gap-3 hover:scale-105 transition">
+          <i class="fa-brands fa-google-play text-2xl"></i>
+          <span class="text-left leading-none text-sm">GET IT ON<br><b class="text-base">Google Play</b></span>
+        </button>
+        <button onclick="toast('Opening Apple App Store...','success')" class="bg-lunaDeep border border-white/30 text-white font-bold px-5 py-3 rounded-2xl flex items-center gap-3 hover:scale-105 transition">
+          <i class="fa-brands fa-apple text-2xl"></i>
+          <span class="text-left leading-none text-sm">Download on<br><b class="text-base">App Store</b></span>
+        </button>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-sm font-semibold text-blue-100">
+        <span>⭐ 4.7 rating</span><span>•</span><span>10L+ downloads</span>
+      </div>
+    </div>
+
+    <div class="relative flex justify-center">
+      <div class="w-[240px] sm:w-60 bg-white rounded-[2rem] shadow-2xl p-4 border-4 border-lunaDeep rotate-3 hover:rotate-0 transition duration-500">
+        <div class="bg-gradient-to-br from-lunaBlue to-lunaBright rounded-2xl p-4 text-white">
+          <p class="text-xs opacity-80">Total Cover Protected</p>
+          <p class="text-2xl font-extrabold">₹1.4 Crore</p>
+          <div class="mt-2 flex gap-1.5 flex-wrap">
+            <span class="text-[10px] bg-white/20 px-2 py-1 rounded-full font-bold">Car ✓</span>
+            <span class="text-[10px] bg-white/20 px-2 py-1 rounded-full font-bold">Health ✓</span>
+            <span class="text-[10px] bg-lunaGold text-lunaDeep px-2 py-1 rounded-full font-bold">Term ✓</span>
+          </div>
+        </div>
+        <div class="mt-3 space-y-2">
+          <div class="flex items-center gap-2 bg-slate-50 rounded-xl p-2.5">
+            <span class="w-8 h-8 rounded-lg bg-green-100 text-green-600 flex items-center justify-center text-sm"><i class="fa-solid fa-check"></i></span>
+            <div class="text-xs"><b>Claim Approved</b><br><span class="text-slate-500">₹85,400 • Health</span></div>
+          </div>
+          <div class="flex items-center gap-2 bg-slate-50 rounded-xl p-2.5">
+            <span class="w-8 h-8 rounded-lg bg-blue-100 text-lunaBright flex items-center justify-center text-sm"><i class="fa-solid fa-bell"></i></span>
+            <div class="text-xs"><b>Car Renewal Due</b><br><span class="text-slate-500">in 12 days • Save 45%</span></div>
+          </div>
+          <button onclick="scrollToQuote()" class="w-full btn-primary text-white text-xs font-extrabold py-2.5 rounded-xl">Renew Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="max-w-7xl mx-auto px-4 pb-16 grid lg:grid-cols-2 gap-8 scroll-mt-24">
+  <div class="reveal">
+    <span class="inline-block bg-blue-50 text-lunaBright text-xs font-extrabold tracking-widest uppercase px-4 py-1.5 rounded-full border border-blue-100">Get In Touch</span>
+    <h2 class="text-3xl md:text-4xl font-extrabold mt-3">Visit Us or Just <span class="text-lunaRed">Give a Missed Call</span></h2>
+
+    <div class="mt-6 space-y-4">
+      <div class="flex gap-4 bg-white border rounded-2xl p-5">
+        <span class="w-12 h-12 shrink-0 rounded-2xl bg-lunaBlue text-white flex items-center justify-center"><i class="fa-solid fa-location-dot"></i></span>
+        <div>
+          <b>Head Office — New Delhi</b>
+          <p class="text-sm text-slate-500 mt-1">Luna Tower, 4th Floor, 11/6B Connaught Place,<br>New Delhi – 110001 | CIN: U67200DL2009PTC123456</p>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4">
+        <a href="tel:18001203456" class="flex gap-3 bg-white border rounded-2xl p-4 hover:border-lunaRed hover:shadow-lg transition">
+          <span class="w-11 h-11 shrink-0 rounded-xl bg-red-50 text-lunaRed flex items-center justify-center"><i class="fa-solid fa-phone"></i></span>
+          <div><b class="text-sm">1800-120-3456</b><p class="text-xs text-slate-500">Toll Free • 24×7 Claims</p></div>
+        </a>
+        <a href="mailto:care@lunainsurance.com" class="flex gap-3 bg-white border rounded-2xl p-4 hover:border-lunaBright hover:shadow-lg transition">
+          <span class="w-11 h-11 shrink-0 rounded-xl bg-blue-50 text-lunaBright flex items-center justify-center"><i class="fa-solid fa-envelope"></i></span>
+          <div><b class="text-sm">care@lunainsurance.com</b><p class="text-xs text-slate-500">Reply within 4 hrs</p></div>
+        </a>
+      </div>
+
+      <div class="bg-white border rounded-2xl p-4 flex flex-wrap gap-2">
+        <span class="text-sm font-bold mr-2">Branches:</span>
+        <span class="text-xs font-bold bg-slate-100 px-3 py-1.5 rounded-full">Mumbai</span>
+        <span class="text-xs font-bold bg-slate-100 px-3 py-1.5 rounded-full">Bengaluru</span>
+        <span class="text-xs font-bold bg-slate-100 px-3 py-1.5 rounded-full">Chennai</span>
+        <span class="text-xs font-bold bg-slate-100 px-3 py-1.5 rounded-full">Hyderabad</span>
+        <span class="text-xs font-bold bg-slate-100 px-3 py-1.5 rounded-full">Kolkata</span>
+        <span class="text-xs font-bold bg-lunaBlue text-white px-3 py-1.5 rounded-full">+120 more</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white border rounded-3xl p-6 sm:p-7 shadow-card reveal">
+    <h3 class="text-xl font-extrabold">Request a Free Callback</h3>
+    <p class="text-sm text-slate-500">Licensed advisor will call you in 10 minutes (9 AM – 9 PM)</p>
+    <form id="contactForm" class="mt-5 grid sm:grid-cols-2 gap-3">
+      <input required placeholder="Your Name *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+      <input required maxlength="10" inputmode="numeric" pattern="[0-9]{10}" title="10 digit mobile" placeholder="Mobile Number *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+      <select class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold sm:col-span-2">
+        <option>Interested in: Car Insurance</option>
+        <option>Interested in: Health Insurance</option>
+        <option>Interested in: Term Life Insurance</option>
+        <option>Interested in: Travel Insurance</option>
+        <option>Interested in: Home Insurance</option>
+        <option>Interested in: Business Insurance</option>
+        <option>Need Claim Help</option>
+      </select>
+      <textarea rows="3" placeholder="Your message (optional)" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold sm:col-span-2"></textarea>
+      <button class="sm:col-span-2 btn-primary text-white font-extrabold py-3.5 rounded-xl">Request Callback <i class="fa-solid fa-phone-volume ml-1"></i></button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-lunaDeep text-blue-100">
+  <div class="max-w-7xl mx-auto px-4 py-14 grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+    <div class="lg:col-span-2">
+      <div class="flex items-center gap-2.5">
+        <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center"><i class="fa-solid fa-moon text-lunaGold text-xl"></i></div>
+        <div class="text-xl font-extrabold text-white">LUNA <span class="text-lunaRed">INSURANCE</span></div>
+      </div>
+      <p class="text-sm mt-4 leading-relaxed text-blue-200/90">Luna Insurance Brokers Pvt. Ltd. is an IRDAI-licensed Direct (Life &amp; General) Insurance Broker. We help you compare, buy, renew and claim across 42+ insurers — transparently and honestly.</p>
+      <div class="mt-4 flex gap-2.5">
+        <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-lunaRed hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-lunaRed hover:text-white transition"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-lunaRed hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-lunaRed hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-lunaRed hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="mt-5 flex flex-wrap items-center gap-3 text-xs font-bold">
+        <span class="bg-white/10 px-3 py-1.5 rounded-lg border border-white/10">IRDAI LICENCE: DB 592/18</span>
+        <span class="bg-green-500/20 text-green-300 px-3 py-1.5 rounded-lg border border-green-400/30">● 100% Secure 256-bit SSL</span>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="text-white font-extrabold mb-4">Products</h4>
+      <ul class="space-y-2.5 text-sm font-medium">
+        <li><a href="#products" class="hover:text-lunaGold">Car Insurance</a></li>
+        <li><a href="#products" class="hover:text-lunaGold">Bike Insurance</a></li>
+        <li><a href="#products" class="hover:text-lunaGold">Health Insurance</a></li>
+        <li><a href="#products" class="hover:text-lunaGold">Term Life Insurance</a></li>
+        <li><a href="#products" class="hover:text-lunaGold">Travel Insurance</a></li>
+        <li><a href="#products" class="hover:text-lunaGold">Home Insurance</a></li>
+        <li><a href="#products" class="hover:text-lunaGold">Business / SME Insurance</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white font-extrabold mb-4">Company</h4>
+      <ul class="space-y-2.5 text-sm font-medium">
+        <li><a href="#" class="hover:text-lunaGold">About Us</a></li>
+        <li><a href="#posp" class="hover:text-lunaGold">Become POSP Partner</a></li>
+        <li><a href="#" class="hover:text-lunaGold">Careers <span class="bg-lunaRed text-white text-[10px] px-2 py-0.5 rounded-full ml-1">Hiring</span></a></li>
+        <li><a href="#" class="hover:text-lunaGold">Investor Relations</a></li>
+        <li><a href="#" class="hover:text-lunaGold">Newsroom &amp; Blog</a></li>
+        <li><a href="#" class="hover:text-lunaGold">CSR Policy</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white font-extrabold mb-4">Support</h4>
+      <ul class="space-y-2.5 text-sm font-medium">
+        <li><a href="#renew" class="hover:text-lunaGold">Renew Policy</a></li>
+        <li><a href="#claims" class="hover:text-lunaGold">File / Track Claim</a></li>
+        <li><a href="#calculator" class="hover:text-lunaGold">Premium Calculator</a></li>
+        <li><a href="#" class="hover:text-lunaGold">Download Policy</a></li>
+        <li><a href="#" class="hover:text-lunaGold">Grievance Redressal</a></li>
+        <li><a href="#" class="hover:text-lunaGold">Privacy &amp; Terms</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-5 text-[12px] leading-relaxed text-blue-200/70">
+      <p><b class="text-blue-100">BEWARE OF SPURIOUS PHONE CALLS AND FICTITIOUS OFFERS:</b> IRDAI is not involved in activities like selling insurance policies, announcing bonuses or investment of premiums. Public receiving such phone calls are requested to lodge a police complaint. Luna Insurance never asks for OTP, CVV or payments to personal UPI IDs.</p>
+      <p class="mt-2">Insurance is the subject matter of solicitation. Visitors are hereby informed that their information submitted on the website may be shared with insurers. Product information is authentic and solely based on information received from insurers. *Claim settlement ratio is weighted average across partners for FY 2024-25. Premiums shown are indicative. © 2026 Luna Insurance Brokers Pvt. Ltd. All rights reserved. | CIN: U67200DL2009PTC123456</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<div class="fixed bottom-4 right-4 sm:bottom-5 sm:right-5 z-50 flex flex-col gap-3 items-end">
+  <button onclick="toggleChat(true)" class="btn-blue text-white font-bold pl-4 pr-5 py-3 rounded-full shadow-2xl flex items-center gap-2 hover:scale-105 transition text-sm">
+    <span class="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse"></span><i class="fa-solid fa-robot"></i> Luna Mitra
+  </button>
+  <div class="flex gap-2.5">
+    <a href="https://wa.me/9118001203456" target="_blank" rel="noopener" aria-label="WhatsApp" class="pulse-ring w-[52px] h-[52px] rounded-full bg-[#25D366] text-white text-xl shadow-xl hover:scale-110 transition flex items-center justify-center"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="tel:18001203456" aria-label="Call" class="w-[52px] h-[52px] rounded-full bg-lunaRed text-white text-lg shadow-xl hover:scale-110 transition flex items-center justify-center"><i class="fa-solid fa-phone"></i></a>
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top" class="w-[52px] h-[52px] rounded-full bg-lunaBlue text-white shadow-xl hover:scale-110 transition flex items-center justify-center"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+</div>
+
+<!-- CHATBOT -->
+<div id="chatWin" class="hidden fixed bottom-20 right-4 sm:bottom-24 sm:right-5 z-[60] w-[92vw] max-w-[380px] bg-white rounded-3xl shadow-2xl overflow-hidden border flex flex-col" style="height:min(520px,72vh)">
+  <div class="bg-gradient-to-r from-lunaBlue to-lunaBright p-4 flex items-center gap-3">
+    <div class="w-11 h-11 rounded-full bg-white/15 flex items-center justify-center text-lunaGold text-xl"><i class="fa-solid fa-robot"></i></div>
+    <div class="flex-1">
+      <div class="text-white font-extrabold">Luna Mitra <span class="text-[10px] bg-green-400 text-lunaDeep px-2 py-0.5 rounded-full ml-1">ONLINE</span></div>
+      <div class="text-blue-200 text-xs">AI Assistant • replies instantly</div>
+    </div>
+    <button onclick="toggleChat(false)" aria-label="Close chat" class="text-white/70 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
+  </div>
+  <div id="chatBody" class="flex-1 overflow-y-auto p-4 space-y-3 bg-slate-50"></div>
+  <div class="p-2.5 bg-white border-t">
+    <div class="flex gap-1.5 overflow-x-auto pb-2 no-scrollbar" id="chatChips"></div>
+    <div class="flex gap-2">
+      <input id="chatInput" onkeydown="if(event.key==='Enter')sendChat()" placeholder="Type your question..." class="flex-1 border-2 border-slate-200 rounded-full px-4 py-2.5 text-sm font-medium">
+      <button onclick="sendChat()" aria-label="Send" class="w-11 h-11 rounded-full btn-primary text-white shrink-0"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div id="searchOverlay" class="hidden fixed inset-0 z-[70] modal-bg p-4 overflow-y-auto">
+  <div class="max-w-2xl mx-auto mt-10 sm:mt-20 bg-white rounded-3xl p-5 sm:p-6 shadow-2xl">
+    <div class="flex items-center gap-3">
+      <i class="fa-solid fa-magnifying-glass text-lunaBright text-xl"></i>
+      <input id="searchInput" oninput="doSearch()" placeholder="Search: car, health, claim, NCB, POSP..." class="flex-1 text-lg font-semibold outline-none">
+      <button onclick="closeSearch()" aria-label="Close search" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="searchResults" class="mt-4 space-y-2 max-h-80 overflow-auto"></div>
+  </div>
+</div>
+
+<!-- QUOTE RESULTS MODAL -->
+<div id="quoteModal" class="hidden fixed inset-0 z-[70] modal-bg p-3 overflow-y-auto">
+  <div class="max-w-5xl mx-auto my-4 sm:my-6 bg-slate-50 rounded-3xl overflow-hidden shadow-2xl">
+    <div class="bg-gradient-to-r from-lunaBlue to-lunaBright px-5 sm:px-6 py-5 flex items-center justify-between gap-3 sticky top-0 z-10">
+      <div>
+        <h3 id="qmTitle" class="text-white font-extrabold text-lg sm:text-xl">Recommended Plans</h3>
+        <p id="qmSub" class="text-blue-200 text-sm">3 best plans matching your profile</p>
+      </div>
+      <button onclick="closeModal('quoteModal')" aria-label="Close" class="w-10 h-10 rounded-full bg-white/15 text-white hover:bg-white hover:text-lunaBlue transition shrink-0"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div id="quoteLoader" class="p-10 sm:p-12 text-center">
+      <div class="mx-auto" style="width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,#FFD86B 40%,#FF6B2C 75%);box-shadow:0 0 50px rgba(255,184,0,.5);animation:floaty 2s ease-in-out infinite"></div>
+      <p class="mt-4 font-bold text-lunaBlue">Comparing 42 insurers for best price...</p>
+      <div class="max-w-xs mx-auto mt-3 h-2 bg-slate-200 rounded-full overflow-hidden"><div id="quoteBar" class="h-full w-0 bg-gradient-to-r from-lunaRed to-lunaOrange rounded-full transition-all duration-1000"></div></div>
+    </div>
+
+    <div id="quoteResults" class="hidden p-4 sm:p-5 grid md:grid-cols-3 gap-5"></div>
+  </div>
+</div>
+
+<!-- COMPARE MODAL -->
+<div id="compareModal" class="hidden fixed inset-0 z-[70] modal-bg p-3 overflow-y-auto">
+  <div class="max-w-4xl mx-auto my-4 sm:my-6 bg-white rounded-3xl overflow-hidden shadow-2xl">
+    <div class="bg-lunaDeep px-5 sm:px-6 py-5 flex items-center justify-between gap-3">
+      <h3 class="text-white font-extrabold text-lg sm:text-xl">Side-by-Side Comparison</h3>
+      <button onclick="closeModal('compareModal')" aria-label="Close" class="w-10 h-10 rounded-full bg-white/15 text-white"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="p-4 sm:p-5 overflow-x-auto">
+      <table id="compareTable" class="w-full text-sm min-w-[560px]"></table>
+    </div>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div id="buyModal" class="hidden fixed inset-0 z-[70] modal-bg p-3 overflow-y-auto">
+  <div class="max-w-2xl mx-auto my-4 sm:my-6 bg-white rounded-3xl overflow-hidden shadow-2xl">
+    <div class="bg-gradient-to-r from-lunaRed to-lunaOrange px-5 sm:px-6 py-5 flex items-center justify-between gap-3">
+      <div>
+        <h3 id="buyTitle" class="text-white font-extrabold text-lg sm:text-xl">Complete Your Purchase</h3>
+        <p class="text-white/80 text-sm">100% secure • Instant e-policy</p>
+      </div>
+      <button onclick="closeModal('buyModal')" aria-label="Close" class="w-10 h-10 rounded-full bg-white/20 text-white shrink-0"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="px-4 sm:px-6 pt-5 flex items-center gap-2 overflow-x-auto no-scrollbar" id="buySteps">
+      <div class="step active flex items-center gap-2" data-s="1"><span class="step-dot">1</span><span class="text-xs font-bold hidden sm:block">Details</span></div>
+      <div class="flex-1 h-0.5 bg-slate-200 rounded min-w-[16px]"></div>
+      <div class="step flex items-center gap-2" data-s="2"><span class="step-dot">2</span><span class="text-xs font-bold hidden sm:block">Nominee</span></div>
+      <div class="flex-1 h-0.5 bg-slate-200 rounded min-w-[16px]"></div>
+      <div class="step flex items-center gap-2" data-s="3"><span class="step-dot">3</span><span class="text-xs font-bold hidden sm:block">Payment</span></div>
+      <div class="flex-1 h-0.5 bg-slate-200 rounded min-w-[16px]"></div>
+      <div class="step flex items-center gap-2" data-s="4"><span class="step-dot">✓</span><span class="text-xs font-bold hidden sm:block">Done</span></div>
+    </div>
+
+    <div class="p-5 sm:p-6">
+      <div id="buyStep1" class="grid sm:grid-cols-2 gap-3">
+        <input id="bName" placeholder="Full Name (as per ID) *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold sm:col-span-2">
+        <input id="bMobile" maxlength="10" inputmode="numeric" placeholder="Mobile *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+        <input id="bEmail" type="email" placeholder="Email *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+        <input id="bDob" type="date" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+        <input id="bPin" maxlength="6" inputmode="numeric" placeholder="Pincode *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+        <button onclick="buyNext(2)" class="sm:col-span-2 btn-primary text-white font-extrabold py-3 rounded-xl">Continue <i class="fa-solid fa-arrow-right ml-1"></i></button>
+      </div>
+
+      <div id="buyStep2" class="hidden grid sm:grid-cols-2 gap-3">
+        <input id="bNominee" placeholder="Nominee Full Name *" class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+        <select class="border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+          <option>Spouse</option><option>Father</option><option>Mother</option><option>Son</option><option>Daughter</option><option>Brother</option>
+        </select>
+        <div class="sm:col-span-2 bg-lunaLight rounded-xl p-4 text-sm">
+          <b>Order Summary:</b>
+          <div class="flex justify-between mt-2 gap-3"><span id="sumPlan">Plan</span><b id="sumPrice">₹0</b></div>
+          <div class="flex justify-between text-green-700 font-bold"><span>Luna Discount Applied</span><span id="sumDisc">-₹0</span></div>
+          <div class="flex justify-between text-lg font-extrabold border-t mt-2 pt-2"><span>Payable (incl. GST)</span><span id="sumTotal" class="text-lunaRed">₹0</span></div>
+        </div>
+        <button onclick="buyNext(1)" class="border-2 border-slate-200 font-bold py-3 rounded-xl">Back</button>
+        <button onclick="buyNext(3)" class="btn-primary text-white font-extrabold py-3 rounded-xl">Proceed to Pay</button>
+      </div>
+
+      <div id="buyStep3" class="hidden">
+        <div class="grid grid-cols-3 gap-2">
+          <button onclick="payMethod(this,'UPI')" class="pay-btn border-2 border-lunaBlue bg-lunaLight rounded-xl py-3 font-bold text-sm"><i class="fa-solid fa-mobile-screen text-lunaBright text-xl block mb-1"></i>UPI</button>
+          <button onclick="payMethod(this,'Card')" class="pay-btn border-2 border-slate-200 rounded-xl py-3 font-bold text-sm"><i class="fa-solid fa-credit-card text-lunaBright text-xl block mb-1"></i>Card</button>
+          <button onclick="payMethod(this,'Netbanking')" class="pay-btn border-2 border-slate-200 rounded-xl py-3 font-bold text-sm"><i class="fa-solid fa-building-columns-bank text-lunaBright text-xl block mb-1"></i>Netbanking</button>
+        </div>
+        <div id="payBox" class="mt-4 bg-slate-50 border rounded-xl p-4">
+          <input id="upiId" placeholder="yourname@upi" class="w-full border-2 border-slate-200 rounded-xl px-4 py-2.5 text-sm font-semibold bg-white">
+        </div>
+        <button onclick="processPayment()" id="payBtn" class="mt-4 w-full btn-blue text-white font-extrabold py-3.5 rounded-xl">Pay <span id="payAmt">₹0</span> Securely <i class="fa-solid fa-lock ml-1"></i></button>
+        <p class="text-center text-xs text-slate-400 mt-2"><i class="fa-solid fa-shield-halved"></i> 256-bit encrypted • PCI-DSS compliant gateway</p>
+      </div>
+
+      <div id="buyStep4" class="hidden text-center py-4">
+        <div class="w-20 h-20 mx-auto rounded-full bg-green-100 flex items-center justify-center"><i class="fa-solid fa-check text-green-600 text-4xl"></i></div>
+        <h3 class="text-2xl font-extrabold mt-4 text-green-700">Policy Issued Successfully!</h3>
+        <p class="text-sm text-slate-500 mt-1">E-policy sent to your email + WhatsApp</p>
+        <div class="mt-4 bg-slate-50 border-2 border-dashed rounded-2xl p-4 inline-block">
+          <p class="text-xs font-bold text-slate-500">POLICY NUMBER</p>
+          <p id="policyNo" class="text-lg sm:text-xl font-extrabold text-lunaBlue tracking-wide">LUNA/2026/000000</p>
+        </div>
+        <div class="mt-5 flex flex-col sm:flex-row gap-2 justify-center">
+          <button onclick="downloadPolicy()" class="btn-blue text-white font-bold px-6 py-3 rounded-xl"><i class="fa-solid fa-download mr-1"></i> Download Policy</button>
+          <button onclick="closeModal('buyModal')" class="border-2 border-slate-200 font-bold px-6 py-3 rounded-xl">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CALLBACK / OTP MODAL -->
+<div id="callbackModal" class="hidden fixed inset-0 z-[70] modal-bg p-4 overflow-y-auto">
+  <div class="max-w-md mx-auto my-10 bg-white rounded-3xl p-6 sm:p-7 shadow-2xl">
+    <div class="flex items-center justify-between gap-3">
+      <h3 class="font-extrabold text-xl">Request Callback</h3>
+      <button onclick="closeModal('callbackModal')" aria-label="Close" class="w-9 h-9 rounded-full bg-slate-100"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div id="cbStep1" class="mt-4 space-y-3">
+      <input id="cbName" placeholder="Your Name *" class="w-full border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold">
+      <div class="flex">
+        <span class="border-2 border-r-0 border-slate-200 rounded-l-xl px-3 py-3 bg-slate-50 font-bold text-sm">+91</span>
+        <input id="cbMobile" maxlength="10" inputmode="numeric" placeholder="Mobile Number *" class="w-full border-2 border-slate-200 rounded-r-xl px-4 py-3 text-sm font-semibold">
+      </div>
+      <button onclick="sendOtp()" class="w-full btn-primary text-white font-extrabold py-3 rounded-xl">Send OTP</button>
+    </div>
+
+    <div id="cbStep2" class="hidden mt-4 space-y-3 text-center">
+      <p class="text-sm text-slate-500">OTP sent to +91 <b id="otpMobile">—</b></p>
+      <div class="flex justify-center gap-2" id="otpBoxes">
+        <input maxlength="1" inputmode="numeric" class="otp w-11 h-12 sm:w-12 text-center text-xl font-extrabold border-2 border-slate-200 rounded-xl">
+        <input maxlength="1" inputmode="numeric" class="otp w-11 h-12 sm:w-12 text-center text-xl font-extrabold border-2 border-slate-200 rounded-xl">
+        <input maxlength="1" inputmode="numeric" class="otp w-11 h-12 sm:w-12 text-center text-xl font-extrabold border-2 border-slate-200 rounded-xl">
+        <input maxlength="1" inputmode="numeric" class="otp w-11 h-12 sm:w-12 text-center text-xl font-extrabold border-2 border-slate-200 rounded-xl">
+      </div>
+      <button onclick="verifyOtp()" class="w-full btn-blue text-white font-extrabold py-3 rounded-xl">Verify &amp; Confirm Callback</button>
+      <button onclick="sendOtp(true)" class="text-xs font-bold text-lunaBright">Resend OTP</button>
+    </div>
+
+    <div id="cbStep3" class="hidden mt-4 text-center">
+      <div class="w-16 h-16 mx-auto rounded-full bg-green-100 flex items-center justify-center"><i class="fa-solid fa-check text-green-600 text-2xl"></i></div>
+      <h4 class="font-extrabold mt-3">Callback Scheduled!</h4>
+      <p class="text-sm text-slate-500">Our expert will call you within 10 minutes.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TOASTS -->
+<div id="toasts" class="fixed top-20 right-3 sm:top-24 sm:right-4 z-[80] space-y-2 w-[92vw] max-w-sm"></div>
+
+<script>
+/* ================= HELPERS ================= */
+const $ = id => document.getElementById(id);
+const inr = n => '₹' + Number(Math.round(n)).toLocaleString('en-IN');
+const rnd = (a, b) => Math.floor(a + Math.random() * (b - a));
+const validMobile = m => /^[6-9]\d{9}$/.test((m || '').trim());
+
+function toast(msg, type = 'info') {
+  const c = {
+    success: ['bg-green-600', 'fa-circle-check'],
+    error: ['bg-red-600', 'fa-circle-exclamation'],
+    info: ['bg-lunaBlue', 'fa-circle-info']
+  }[type] || ['bg-lunaBlue', 'fa-circle-info'];
+  const d = document.createElement('div');
+  d.className = 'toast ' + c[0] + ' text-white rounded-2xl px-4 py-3 shadow-2xl flex items-center gap-3 text-sm font-semibold';
+  d.innerHTML = '<i class="fa-solid ' + c[1] + ' text-lg"></i><span>' + msg + '</span>';
+  $('toasts').appendChild(d);
+  setTimeout(() => { d.style.opacity = '0'; d.style.transition = '.4s'; setTimeout(() => d.remove(), 420); }, 3400);
+}
+
+function openModal(id) {
+  const el = $(id); if (!el) return;
+  el.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(id) {
+  const el = $(id); if (!el) return;
+  el.classList.add('hidden');
+  if (!document.querySelector('.modal-bg:not(.hidden)')) document.body.style.overflow = '';
+}
+
+function scrollToQuote() {
+  const box = $('quoteBox');
+  if (!box) return;
+  box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  box.classList.add('ring-4', 'ring-lunaRed/40');
+  setTimeout(() => box.classList.remove('ring-4', 'ring-lunaRed/40'), 1500);
+}
+
+function toggleMobile() {
+  const m = $('mobileMenu');
+  m.classList.toggle('hidden');
+  $('menuIcon').className = m.classList.contains('hidden') ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
+}
+function closeMobile() {
+  $('mobileMenu').classList.add('hidden');
+  $('menuIcon').className = 'fa-solid fa-bars';
+}
+
+/* ================= REVEAL + COUNTERS ================= */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+const cio = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const el = e.target;
+      const t = +el.dataset.target;
+      const dec = +(el.dataset.decimal || 0);
+      let c = 0;
+      const step = t / 55;
+      const iv = setInterval(() => {
+        c += step;
+        if (c >= t) { c = t; clearInterval(iv); }
+        el.textContent = dec ? c.toFixed(1) : Math.round(c);
+      }, 25);
+      cio.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.counter').forEach(el => cio.observe(el));
+
+/* ================= TICKER DUPLICATE ================= */
+(function () {
+  const t = $('tickerRow');
+  if (t) t.innerHTML = t.innerHTML + t.innerHTML;
+})();
+
+/* ================= HERO SLIDER ================= */
+const heroData = [
+  {
+    t: `India's Most Trusted <span class="grad-text">Insurance</span> Partner`,
+    s: `Compare 42+ top insurers. Save up to 45% on Car, Health, Term & more. 98.2% claim settlement with a dedicated claim manager.`
+  },
+  {
+    t: `Car Insurance from <span class="grad-text">₹2,199</span> Only`,
+    s: `Zero-Dep cover, 7,500+ cashless garages, instant policy in 5 minutes. Keep your No-Claim Bonus up to 50% even when you switch.`
+  },
+  {
+    t: `₹1 Cr Health Cover @ <span class="grad-text">₹835/month</span>`,
+    s: `10,000+ cashless hospitals, no room-rent capping, free annual health checkup & lifelong renewability for the whole family.`
+  }
+];
+let heroIdx = 0, heroTimer;
+const dotsWrap = $('heroDots');
+heroData.forEach((_, i) => {
+  const d = document.createElement('span');
+  d.className = 'dot' + (i === 0 ? ' active' : '');
+  d.setAttribute('role', 'button');
+  d.setAttribute('aria-label', 'Slide ' + (i + 1));
+  d.onclick = () => heroGoTo(i);
+  dotsWrap.appendChild(d);
+});
+function heroGoTo(i) {
+  heroIdx = (i + heroData.length) % heroData.length;
+  document.querySelectorAll('.hero-slide').forEach((s, k) => s.classList.toggle('active', k === heroIdx));
+  document.querySelectorAll('#heroDots .dot').forEach((d, k) => d.classList.toggle('active', k === heroIdx));
+  const title = $('heroTitle'), sub = $('heroSub');
+  title.style.opacity = '0'; title.style.transform = 'translateY(12px)';
+  sub.style.opacity = '0'; sub.style.transform = 'translateY(12px)';
+  setTimeout(() => {
+    title.innerHTML = heroData[heroIdx].t;
+    sub.textContent = heroData[heroIdx].s;
+    title.style.transition = sub.style.transition = '.5s';
+    title.style.opacity = '1'; title.style.transform = 'none';
+    sub.style.opacity = '1'; sub.style.transform = 'none';
+  }, 180);
+  restartHero();
+}
+function heroGo(d) { heroGoTo(heroIdx + d); }
+function restartHero() { clearInterval(heroTimer); heroTimer = setInterval(() => heroGoTo(heroIdx + 1), 7000); }
+restartHero();
+
+/* ================= QUOTE TABS ================= */
+let activeQuote = 'car';
+document.querySelectorAll('.quote-tab').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.quote-tab').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    activeQuote = b.dataset.tab;
+    document.querySelectorAll('.quote-form').forEach(f => { f.classList.add('hidden'); f.classList.remove('grid'); });
+    const f = $('form-' + activeQuote);
+    if (f) { f.classList.remove('hidden'); f.classList.add('grid'); }
+    b.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  });
+});
+
+function checkMobile(id) {
+  const v = $(id) ? $(id).value.trim() : '';
+  if (!validMobile(v)) { toast('Please enter a valid 10-digit mobile number', 'error'); if ($(id)) $(id).focus(); return false; }
+  return true;
+}
+
+/* Premium engines */
+function carPremium() {
+  const y = +$('carYear').value, age = 2026 - y, ncb = +$('carNcb').value;
+  let base = 8200 - age * 550;
+  if (base < 3200) base = 3200;
+  base = base * (1 - ncb / 220);
+  return Math.max(2199, base);
+}
+function bikePremium() { const cc = +$('bikeCc').value; return cc <= 100 ? 1050 : cc <= 200 ? 1850 : 3200; }
+function healthPremium() {
+  const age = +$('healthAge').value, cover = +$('healthCover').value, mem = +$('healthMembers').value;
+  const per = (cover / 1000000) * 820 * (1 + (age - 25) * 0.035);
+  return Math.max(485, per * mem * 0.72);
+}
+function termPremium() {
+  const age = +$('termAge').value, cover = +$('termCover').value;
+  const s = $('termSmoke').value === 'yes' ? 1.42 : 1;
+  return Math.max(490, (cover / 10000000) * 620 * (1 + (age - 25) * 0.09) * s);
+}
+function travelPremium() {
+  const days = parseInt($('travelDays').value) || 15;
+  const mult = $('travelDest').value.includes('USA') ? 1.6 : $('travelDest').value.includes('Europe') ? 1.25 : 1;
+  return Math.max(299, days * 48 * mult);
+}
+function homePremium() {
+  const map = { '₹25 Lakh': 1999, '₹50 Lakh': 3299, '₹75 Lakh': 4499, '₹1 Crore': 5999, '₹2 Crore+': 9499 };
+  return map[$('homeValue').value] || 3299;
+}
+
+const insurerPool = [
+  { n: 'HDFC Ergo', r: 4.7, cs: '98.4%', c: '#E30613' },
+  { n: 'ICICI Lombard', r: 4.6, cs: '97.9%', c: '#B02A30' },
+  { n: 'Tata AIG', r: 4.6, cs: '98.1%', c: '#0A2A62' },
+  { n: 'Bajaj Allianz', r: 4.5, cs: '97.2%', c: '#003DA5' },
+  { n: 'Go Digit', r: 4.7, cs: '98.8%', c: '#FF6B2C' },
+  { n: 'Niva Bupa', r: 4.6, cs: '96.8%', c: '#0AA06E' },
+  { n: 'Star Health', r: 4.5, cs: '97.5%', c: '#E30613' },
+  { n: 'SBI Life', r: 4.4, cs: '98.9%', c: '#1A56DB' },
+  { n: 'LIC', r: 4.8, cs: '99.2%', c: '#B8860B' }
+];
+const featPool = {
+  car: ['Zero Depreciation', '24×7 Roadside Assist', '7,500+ Cashless Garages', 'Engine Protection', 'NCB up to 50%', 'Same-day Claim'],
+  bike: ['Zero Depreciation', 'Pillion Cover', '7,500+ Garages', 'Theft Protection', 'Instant Renewal', 'PA Cover ₹15L'],
+  health: ['No Room-Rent Cap', '10,000+ Cashless Hospitals', 'Free Health Checkup', 'Pre/Post 60/180 Days', 'AYUSH Covered', 'Lifelong Renewal'],
+  term: ['99.2% Claim Ratio', 'Critical Illness Rider', 'Accidental Cover', 'Flexible Payout', 'Tax Benefit 80C', 'Zero Commission'],
+  travel: ['$250K Medical Cover', 'Baggage Loss ₹1L', 'Flight Delay Cover', 'COVID-19 Covered', 'Cashless Worldwide', 'Visa Assistance'],
+  home: ['Fire & Burglary', 'Natural Calamity', 'Contents Covered', 'Alternate Stay ₹2L', 'Electrical Breakdown', '24×7 Helpline']
+};
+
+document.querySelectorAll('.quote-form').forEach(f => {
+  f.addEventListener('submit', e => {
+    e.preventDefault();
+    const map = {
+      car: ['carNo', 'carMobile'], bike: ['bikeNo', 'bikeMobile'], health: ['healthMobile'],
+      term: ['termMobile'], travel: ['travelMobile'], home: ['homeMobile']
+    };
+    const ids = map[activeQuote];
+    if (ids[0] && ids[0].indexOf('No') > -1) {
+      const v = $(ids[0]).value.trim();
+      if (v.length > 0 && v.length < 5) { toast('Please enter a valid vehicle number', 'error'); return; }
+    }
+    if (!checkMobile(ids[ids.length - 1])) return;
+    runQuote();
+  });
+});
+
+function runQuote() {
+  openModal('quoteModal');
+  $('quoteLoader').classList.remove('hidden');
+  $('quoteResults').classList.add('hidden');
+  $('quoteBar').style.width = '0%';
+  setTimeout(() => $('quoteBar').style.width = '100%', 60);
+
+  const names = {
+    car: 'Car Insurance', bike: 'Bike Insurance', health: 'Health Insurance',
+    term: 'Term Life Insurance', travel: 'Travel Insurance', home: 'Home Insurance'
+  };
+  $('qmTitle').textContent = names[activeQuote] + ' — Best 3 Plans';
+
+  setTimeout(() => {
+    const base = {
+      car: carPremium(), bike: bikePremium(), health: healthPremium(),
+      term: termPremium(), travel: travelPremium(), home: homePremium()
+    }[activeQuote];
+    const per = {
+      car: '/year', bike: '/year', health: '/month',
+      term: '/month', travel: '/trip', home: '/year'
+    }[activeQuote];
+
+    const picked = insurerPool.slice().sort(() => 0.5 - Math.random()).slice(0, 3);
+    const mults = [0.94, 1, 1.12];
+    const featsAll = featPool[activeQuote] || featPool.car;
+
+    $('quoteResults').innerHTML = picked.map((p, i) => {
+      const price = Math.round(base * mults[i]);
+      const mrp = Math.round(price * 1.32);
+      const feats = featsAll.slice(i, i + 4);
+      const badge = i === 0
+        ? '<span class="absolute -top-3 left-4 bg-gradient-to-r from-lunaRed to-lunaOrange text-white text-[11px] font-extrabold px-3 py-1 rounded-full">★ BEST VALUE • SAVE 32%</span>'
+        : i === 1
+          ? '<span class="absolute -top-3 left-4 bg-lunaBlue text-white text-[11px] font-extrabold px-3 py-1 rounded-full">MOST POPULAR</span>'
+          : '';
+      return `
+      <div class="bg-white rounded-2xl border-2 ${i === 0 ? 'border-lunaRed shadow-pop' : 'border-slate-100'} p-5 relative flex flex-col">
+        ${badge}
+        <div class="flex items-center gap-3 mt-1">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white font-extrabold text-lg" style="background:${p.c}">${p.n[0]}</div>
+          <div>
+            <b>${p.n}</b>
+            <div class="text-xs text-slate-500">⭐ ${p.r} • Claim ${p.cs}</div>
+          </div>
+        </div>
+        <div class="mt-3 flex items-end gap-2 flex-wrap">
+          <span class="text-3xl font-extrabold text-lunaBlue">${inr(price)}</span>
+          <span class="text-sm text-slate-400 font-semibold">${per}</span>
+          <span class="text-sm line-through text-slate-400 sm:ml-auto">${inr(mrp)}</span>
+        </div>
+        <ul class="mt-3 space-y-1.5 text-[13px] font-medium text-slate-600 flex-1">
+          ${feats.map(f => `<li class="flex gap-2"><i class="fa-solid fa-check text-green-500 mt-0.5"></i>${f}</li>`).join('')}
+        </ul>
+        <div class="mt-4 grid grid-cols-2 gap-2">
+          <button onclick='buyPlan(${JSON.stringify(p.n + ' ' + names[activeQuote])}, ${price})' class="btn-primary text-white font-extrabold py-2.5 rounded-xl text-sm">Buy Now</button>
+          <button onclick="toast('Plan details PDF sent to your WhatsApp','success')" class="border-2 border-slate-200 font-bold py-2.5 rounded-xl text-sm hover:border-lunaBlue">Details</button>
+        </div>
+      </div>`;
+    }).join('');
+
+    $('quoteLoader').classList.add('hidden');
+    $('quoteResults').classList.remove('hidden');
+    $('qmSub').textContent = `Showing 3 of ${rnd(18, 32)} plans • Cover customisable at next step`;
+  }, 1500);
+}
+
+/* ================= PRODUCTS ================= */
+const products = [
+  { i: 'fa-car', t: 'Car Insurance', d: 'Zero-dep from ₹2,199/yr • 7,500+ cashless garages', tag: '45% OFF', tab: 'car' },
+  { i: 'fa-motorcycle', t: 'Bike Insurance', d: 'Plans from ₹538/yr • Instant renewal, no inspection', tag: 'Best Price', tab: 'bike' },
+  { i: 'fa-heart-pulse', t: 'Health Insurance', d: '₹5L–₹1Cr cover • 10,000+ cashless hospitals', tag: '₹1Cr @ ₹835', tab: 'health' },
+  { i: 'fa-user-shield', t: 'Term Life Insurance', d: '₹1Cr @ ₹490/mo • 99.2% claim settlement', tag: 'Must Have', tab: 'term' },
+  { i: 'fa-plane-departure', t: 'Travel Insurance', d: 'USA/Europe/Worldwide • Visa-compliant in 2 min', tag: 'From ₹299', tab: 'travel' },
+  { i: 'fa-house-chimney', t: 'Home Insurance', d: 'Structure + contents • Fire, theft & calamity', tag: 'From ₹1,999', tab: 'home' },
+  { i: 'fa-briefcase', t: 'Business / SME', d: 'Fire, liability, group health & marine cover', tag: 'Custom', tab: 'car' },
+  { i: 'fa-seedling', t: 'Crop & Rural', d: 'PMFBY + cattle, tractor & weather insurance', tag: 'Govt. Subsidy', tab: 'home' }
+];
+$('productGrid').innerHTML = products.map(p => `
+  <div class="prod-card bg-white border-2 border-slate-100 rounded-2xl p-5 cursor-pointer reveal visible" onclick="gotoTab('${p.tab}')">
+    <span class="absolute top-4 right-4 text-[10px] font-extrabold bg-red-50 text-lunaRed border border-red-100 px-2.5 py-1 rounded-full">${p.tag}</span>
+    <div class="prod-icon w-14 h-14 rounded-2xl bg-lunaLight text-lunaBright flex items-center justify-center text-2xl"><i class="fa-solid ${p.i}"></i></div>
+    <h3 class="font-extrabold text-lg mt-4">${p.t}</h3>
+    <p class="text-[13px] text-slate-500 mt-1 leading-relaxed">${p.d}</p>
+    <div class="mt-4 flex items-center gap-2 text-sm font-extrabold text-lunaRed">Check Price <i class="fa-solid fa-arrow-right"></i></div>
+  </div>`).join('');
+
+function gotoTab(t) {
+  scrollToQuote();
+  const btn = document.querySelector('.quote-tab[data-tab="' + t + '"]');
+  if (btn) btn.click();
+}
+
+/* ================= RENEW LOOKUP ================= */
+function lookupRenew() {
+  const v = $('renewInput').value.trim().toUpperCase();
+  if (v.length < 5) { toast('Enter valid Vehicle / Policy number', 'error'); return; }
+  const box = $('renewResult');
+  box.classList.remove('hidden');
+  box.innerHTML = `<div class="bg-lunaLight border border-blue-100 rounded-2xl p-4 text-sm font-semibold text-lunaBlue"><i class="fa-solid fa-spinner fa-spin mr-2"></i>Fetching policy from insurer database...</div>`;
+  setTimeout(() => {
+    const prem = rnd(4200, 9800), ncb = rnd(20, 50);
+    box.innerHTML = `
+    <div class="border-2 border-green-200 bg-green-50/50 rounded-2xl p-4">
+      <div class="flex items-center gap-2 text-green-700 font-extrabold flex-wrap">
+        <i class="fa-solid fa-circle-check"></i> Policy Found!
+        <span class="sm:ml-auto text-xs bg-green-600 text-white px-2.5 py-1 rounded-full">NCB ${ncb}% SAFE</span>
+      </div>
+      <div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+        <div class="bg-white rounded-xl p-3 border"><p class="text-[11px] text-slate-400 font-bold">VEHICLE / POLICY</p><b class="break-words">${v}</b></div>
+        <div class="bg-white rounded-xl p-3 border"><p class="text-[11px] text-slate-400 font-bold">EXPIRY DATE</p><b class="text-lunaRed">15 Oct 2026</b></div>
+        <div class="bg-white rounded-xl p-3 border"><p class="text-[11px] text-slate-400 font-bold">INSURER</p><b>HDFC Ergo General</b></div>
+        <div class="bg-white rounded-xl p-3 border"><p class="text-[11px] text-slate-400 font-bold">RENEWAL PREMIUM</p><b class="text-lunaBlue text-lg">${inr(prem)}</b></div>
+      </div>
+      <button onclick='buyPlan(${JSON.stringify('Policy Renewal ' + v)}, ${prem})' class="mt-3 w-full btn-blue text-white font-extrabold py-3 rounded-xl">Renew Now &amp; Keep NCB</button>
+    </div>`;
+  }, 1100);
+}
+
+/* ================= CLAIM TRACK ================= */
+function trackClaim() {
+  const v = $('claimInput').value.trim().toUpperCase() || 'LUNA/CL/88214';
+  const box = $('claimResult');
+  box.classList.remove('hidden');
+  box.innerHTML = `<div class="bg-lunaLight border border-blue-100 rounded-2xl p-4 text-sm font-semibold"><i class="fa-solid fa-spinner fa-spin mr-2"></i>Connecting to claim server...</div>`;
+  setTimeout(() => {
+    const stage = rnd(2, 5);
+    const steps = [
+      ['Claim Filed', 'Documents received', 1],
+      ['Survey / Verification', 'Surveyor assigned', 1],
+      ['Approved', '₹68,400 approved', stage >= 3 ? 1 : 0],
+      ['Amount Settled', 'NEFT in 24-48 hrs', stage >= 4 ? 1 : 0]
+    ];
+    box.innerHTML = `
+    <div class="border-2 border-slate-100 rounded-2xl p-5 bg-white">
+      <div class="flex items-center justify-between gap-3 flex-wrap">
+        <b class="break-words">${v}</b>
+        <span class="text-xs font-extrabold ${stage >= 4 ? 'bg-green-100 text-green-700' : 'bg-amber-100 text-amber-700'} px-3 py-1 rounded-full">${stage >= 4 ? 'SETTLED' : 'IN PROGRESS • Stage ' + stage + '/4'}</span>
+      </div>
+      <div class="mt-4 relative pl-1">
+        ${steps.map((s, i) => `
+          <div class="flex gap-4 pb-6 last:pb-0 relative">
+            <div class="w-10 h-10 shrink-0 rounded-full ${s[2] ? 'bg-green-500' : 'bg-slate-200'} text-white flex items-center justify-center font-bold z-10">${s[2] ? '<i class="fa-solid fa-check"></i>' : (i + 1)}</div>
+            ${i < 3 ? '<span class="timeline-line"></span>' : ''}
+            <div><b class="text-sm">${s[0]}</b><p class="text-xs text-slate-500">${s[1]}</p></div>
+          </div>`).join('')}
+      </div>
+      <div class="mt-2 bg-lunaLight rounded-xl p-3 text-xs font-semibold flex items-center gap-2">
+        <i class="fa-solid fa-user-tie text-lunaBright"></i> Claim Manager: <b>Rohit Sharma</b>
+        <a href="tel:18001203456" class="ml-auto text-lunaRed font-extrabold"><i class="fa-solid fa-phone"></i> Call</a>
+      </div>
+    </div>`;
+  }, 1200);
+}
+
+/* ================= PLANS + COMPARE ================= */
+const allPlans = {
+  health: [
+    { n: 'Luna Health Supreme ₹10L', ins: 'Niva Bupa', price: 835, per: '/mo', rate: 4.7, cs: '96.8%', f: ['No room-rent cap', '10,400+ cashless hospitals', 'Free annual checkup', '30-day waiting only'] },
+    { n: 'Star Family Shield ₹25L', ins: 'Star Health', price: 1240, per: '/mo', rate: 4.6, cs: '97.5%', f: ['Restore benefit 100%', 'AYUSH + maternity', 'Home care covered', 'No-claim bonus 50%'] },
+    { n: 'HDFC Optima Restore ₹5L', ins: 'HDFC Ergo', price: 612, per: '/mo', rate: 4.7, cs: '98.4%', f: ['2× auto-restore', 'Pre/post 60/180 days', 'Wellness reward', 'Cashless everywhere'] }
+  ],
+  term: [
+    { n: 'Luna Term Secure+ ₹1Cr', ins: 'SBI Life', price: 490, per: '/mo', rate: 4.8, cs: '99.2%', f: ['99.2% settlement', 'Critical illness rider', 'Accidental + disability', 'Payout in 30 days'] },
+    { n: 'LIC Tech Term ₹2Cr', ins: 'LIC of India', price: 1150, per: '/mo', rate: 4.9, cs: '99.5%', f: ['Sovereign guarantee', 'Women discount 5%', 'Flexible premium', 'Online + offline claim'] },
+    { n: 'Tata Shield Pro ₹1.5Cr', ins: 'Tata AIA', price: 720, per: '/mo', rate: 4.6, cs: '99.1%', f: ['Terminal illness payout', 'Premium waiver', 'Monthly income option', 'Tele-medical free'] }
+  ],
+  motor: [
+    { n: 'Zero-Dep Car Plan', ins: 'Go Digit', price: 2199, per: '/yr', rate: 4.7, cs: '98.8%', f: ['Zero depreciation', '6-min selfie claim', '7,500+ garages', 'Roadside assist free'] },
+    { n: 'Bumper-to-Bumper +', ins: 'ICICI Lombard', price: 3899, per: '/yr', rate: 4.6, cs: '97.9%', f: ['Engine + gearbox', 'Consumables covered', 'Key replacement', 'Daily allowance'] },
+    { n: 'Bike Comprehensive', ins: 'Bajaj Allianz', price: 1050, per: '/yr', rate: 4.5, cs: '97.2%', f: ['OD + TP 5 years', 'PA cover ₹15L', 'Instant renewal', 'Pillion cover'] }
+  ]
+};
+
+let planTab = 'health';
+const compareSet = new Map();
+
+function renderPlans() {
+  const list = allPlans[planTab] || [];
+  $('plansGrid').innerHTML = list.map((p, i) => `
+    <div class="bg-white border-2 rounded-2xl p-5 relative flex flex-col ${i === 0 ? 'border-lunaRed shadow-pop' : 'border-slate-100'}">
+      ${i === 0 ? '<span class="absolute -top-3 left-4 bg-gradient-to-r from-lunaRed to-lunaOrange text-white text-[11px] font-extrabold px-3 py-1 rounded-full">TOP RATED</span>' : ''}
+      <div class="flex items-center gap-3 mt-1">
+        <div class="w-12 h-12 rounded-xl bg-lunaBlue text-white flex items-center justify-center font-extrabold text-lg">${p.ins[0]}</div>
+        <div>
+          <b class="block leading-tight">${p.n}</b>
+          <span class="text-xs text-slate-500">${p.ins} • ⭐ ${p.rate} • Claim ${p.cs}</span>
+        </div>
+      </div>
+      <div class="mt-3 flex items-end gap-1">
+        <span class="text-3xl font-extrabold text-lunaBlue">${inr(p.price)}</span>
+        <span class="text-sm text-slate-400 font-semibold mb-1">${p.per}</span>
+      </div>
+      <ul class="mt-3 space-y-1.5 text-[13px] font-medium text-slate-600 flex-1">
+        ${p.f.map(f => `<li class="flex gap-2"><i class="fa-solid fa-check text-green-500 mt-0.5"></i>${f}</li>`).join('')}
+      </ul>
+      <div class="mt-4 grid grid-cols-2 gap-2">
+        <button onclick='buyPlan(${JSON.stringify(p.n)}, ${p.price})' class="btn-primary text-white font-extrabold py-2.5 rounded-xl text-sm">Buy Now</button>
+        <button onclick='toggleCompare(${JSON.stringify(p.n)}, ${p.price}, ${JSON.stringify(p.ins)}, ${JSON.stringify(p.cs)})' class="border-2 border-slate-200 font-bold py-2.5 rounded-xl text-sm hover:border-lunaBlue">+ Compare</button>
+      </div>
+    </div>`).join('');
+}
+renderPlans();
+
+document.querySelectorAll('.plan-tab').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.plan-tab').forEach(x => {
+      x.classList.remove('bg-lunaBlue', 'text-white');
+      x.classList.add('text-slate-600');
+    });
+    b.classList.add('bg-lunaBlue', 'text-white');
+    b.classList.remove('text-slate-600');
+    planTab = b.dataset.p;
+    renderPlans();
+  });
+});
+
+function toggleCompare(name, price, ins, cs) {
+  if (compareSet.has(name)) {
+    compareSet.delete(name);
+    toast('Removed from comparison', 'info');
+  } else {
+    if (compareSet.size >= 3) { toast('You can compare up to 3 plans', 'error'); return; }
+    compareSet.set(name, { name, price, ins, cs });
+    toast('Added to comparison', 'success');
+  }
+  const bar = $('compareBar');
+  if (compareSet.size > 0) {
+    bar.classList.remove('hidden');
+    bar.classList.add('flex');
+    $('compareCount').textContent = compareSet.size + ' plan' + (compareSet.size > 1 ? 's' : '') + ' selected';
+  } else {
+    bar.classList.add('hidden');
+    bar.classList.remove('flex');
+  }
+}
+function clearCompare() {
+  compareSet.clear();
+  const bar = $('compareBar');
+  bar.classList.add('hidden');
+  bar.classList.remove('flex');
+}
+function openCompare() {
+  if (compareSet.size < 2) { toast('Select at least 2 plans to compare', 'error'); return; }
+  const rows = [
+    ['Plan Name', ...[...compareSet.values()].map(p => p.name)],
+    ['Insurer', ...[...compareSet.values()].map(p => p.ins)],
+    ['Premium', ...[...compareSet.values()].map(p => inr(p.price))],
+    ['Claim Ratio', ...[...compareSet.values()].map(p => p.cs)],
+    ['Cashless Network', ...[...compareSet.values()].map(() => '10,000+')],
+    ['Claim Support', ...[...compareSet.values()].map(() => '24×7 Manager')],
+    ['Buy', ...[...compareSet.values()].map(p => `<button onclick='buyPlan(${JSON.stringify(p.name)}, ${p.price})' class="btn-primary text-white text-xs font-bold px-3 py-2 rounded-lg">Buy</button>`)]
+  ];
+  $('compareTable').innerHTML = rows.map((r, ri) => `
+    <tr class="${ri % 2 ? 'bg-slate-50' : ''} border-b">
+      ${r.map((c, ci) => `<td class="p-3 ${ci === 0 ? 'font-extrabold text-lunaBlue whitespace-nowrap' : 'text-slate-600'}">${c}</td>`).join('')}
+    </tr>`).join('');
+  openModal('compareModal');
+}
+
+/* ================= CALCULATOR ================= */
+function fillRange(el) {
+  const min = +el.min, max = +el.max, val = +el.value;
+  const pct = ((val - min) / (max - min)) * 100;
+  el.style.setProperty('--fill', pct + '%');
+}
+function calcUpdate() {
+  const age = +$('cAge').value, inc = +$('cInc').value, loan = +$('cLoan').value,
+    term = +$('cTerm').value, smoke = $('cSmoke').checked;
+  $('cAgeV').textContent = age + ' yrs';
+  $('cIncV').textContent = '₹' + inc + ' Lakh';
+  $('cLoanV').textContent = '₹' + loan + ' Lakh';
+  $('cTermV').textContent = term + ' yrs';
+
+  const incomeCover = inc * 12 / 100; // in Cr: 12x income in lakh -> lakh*12 /100 = Cr
+  const totalLakh = inc * 12 + loan;
+  const coverCr = Math.max(0.5, totalLakh / 100);
+  $('calcCover').textContent = '₹' + (coverCr >= 1 ? coverCr.toFixed(2).replace(/\.00$/, '') : (coverCr * 100).toFixed(0) + ' L') + (coverCr >= 1 ? ' Cr' : '');
+
+  let prem = (coverCr * 4200) * (1 + (age - 25) * 0.035) * (smoke ? 1.42 : 1) * (term > 30 ? 1.12 : 1);
+  $('calcPrem').textContent = inr(Math.max(399, prem / 12));
+
+  $('b1v').textContent = '₹' + (inc * 12 / 100).toFixed(2).replace(/\.00$/, '') + ' Cr';
+  $('b2v').textContent = '₹' + loan + ' L';
+  $('b1').style.width = Math.min(100, (inc * 12 / Math.max(1, totalLakh)) * 100) + '%';
+  $('b2').style.width = Math.min(100, (loan / Math.max(1, totalLakh)) * 100) + '%';
+
+  ['cAge', 'cInc', 'cLoan', 'cTerm'].forEach(id => fillRange($(id)));
+}
+['cAge', 'cInc', 'cLoan', 'cTerm'].forEach(id => $(id).addEventListener('input', calcUpdate));
+$('cSmoke').addEventListener('change', calcUpdate);
+calcUpdate();
+
+/* ================= POSP SLIDER ================= */
+function pospUpdate() {
+  const n = +$('pospRange').value;
+  $('pospN').textContent = n;
+  $('pospIncome').textContent = inr(n * 1800);
+  fillRange($('pospRange'));
+}
+$('pospRange').addEventListener('input', pospUpdate);
+pospUpdate();
+
+/* ================= PARTNERS ================= */
+const partners = [
+  { n: 'HDFC Ergo', c: '#E30613' }, { n: 'ICICI Lombard', c: '#B02A30' }, { n: 'Tata AIG', c: '#0A2A62' },
+  { n: 'Bajaj Allianz', c: '#003DA5' }, { n: 'Go Digit', c: '#FF6B2C' }, { n: 'Niva Bupa', c: '#0AA06E' },
+  { n: 'Star Health', c: '#E30613' }, { n: 'SBI Life', c: '#1A56DB' }, { n: 'LIC', c: '#B8860B' },
+  { n: 'Max Life', c: '#0A2A62' }, { n: 'New India', c: '#0AA06E' }, { n: 'Reliance Gen', c: '#1656D6' }
+];
+const pLogo = p => `
+  <div class="partner-logo bg-white border rounded-2xl px-6 py-4 flex items-center gap-3 shadow-sm">
+    <div class="w-9 h-9 rounded-xl flex items-center justify-center text-white font-extrabold" style="background:${p.c}">${p.n[0]}</div>
+    <div class="font-extrabold text-sm text-lunaBlue whitespace-nowrap">${p.n}</div>
+  </div>`;
+$('partnerRow').innerHTML = partners.map(pLogo).join('') + partners.map(pLogo).join('');
+$('partnerGrid').innerHTML = partners.slice(0, 12).map(p => `
+  <div class="partner-logo bg-white border rounded-xl px-3 py-3 text-center">
+    <div class="w-9 h-9 mx-auto rounded-xl flex items-center justify-center text-white font-extrabold" style="background:${p.c}">${p.n[0]}</div>
+    <div class="font-bold text-[11px] mt-2 text-lunaBlue">${p.n}</div>
+  </div>`).join('');
+
+/* ================= TESTIMONIALS ================= */
+const reviews = [
+  { n: 'Rohit Malhotra', c: 'New Delhi', t: 'Bought car insurance in 6 minutes flat. Claim of ₹48,000 was settled in 5 days — the claim manager actually picked up every call.', img: 'https://i.pravatar.cc/120?img=12' },
+  { n: 'Priya Sharma', c: 'Pune', t: 'I compared 9 health plans side by side and saved ₹6,200 annually. Zero spam calls, exactly as promised. Highly recommended!', img: 'https://i.pravatar.cc/120?img=32' },
+  { n: 'Amit Verma', c: 'Bengaluru', t: 'Term insurance for ₹1 Cr at ₹490/month. The advisor explained every clause in Hindi. Very transparent and professional.', img: 'https://i.pravatar.cc/120?img=45' },
+  { n: 'Sneha Iyer', c: 'Chennai', t: 'Travel insurance for Schengen visa approved instantly. Got the PDF on WhatsApp within 3 minutes. Super smooth experience.', img: 'https://i.pravatar.cc/120?img=56' }
+];
+$('tTrack').innerHTML = reviews.map(r => `
+  <div class="t-card px-1">
+    <div class="bg-white/10 border border-white/15 rounded-3xl p-6 sm:p-7">
+      <div class="text-lunaGold text-lg tracking-widest">★★★★★</div>
+      <p class="text-blue-100 mt-3 leading-relaxed text-[15px]">"${r.t}"</p>
+      <div class="mt-5 flex items-center gap-3">
+        <img loading="lazy" src="${r.img}" class="w-11 h-11 rounded-full object-cover border-2 border-white/30" alt="${r.n}">
+        <div>
+          <b class="text-white block text-sm">${r.n}</b>
+          <span class="text-blue-300 text-xs">${r.c} • Verified Customer</span>
+        </div>
+        <i class="fa-solid fa-circle-check text-green-400 ml-auto"></i>
+      </div>
+    </div>
+  </div>`).join('');
+let tIdx = 0;
+function tGo(d) {
+  tIdx = (tIdx + d + reviews.length) % reviews.length;
+  $('tTrack').style.transform = `translateX(-${tIdx * 100}%)`;
+}
+
+/* ================= BLOG ================= */
+const blogs = [
+  { t: 'Zero Depreciation vs Comprehensive — Kya Farak Hai?', d: '5 min read • Motor', img: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=400&auto=format&fit=crop' },
+  { t: 'Health Insurance: 10 Things to Check Before Buying', d: '7 min read • Health', img: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=400&auto=format&fit=crop' },
+  { t: 'How NCB Can Cut Your Car Premium by 50%', d: '4 min read • Savings', img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=400&auto=format&fit=crop' },
+  { t: 'Term Insurance Claim Process Explained Simply', d: '6 min read • Life', img: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=400&auto=format&fit=crop' }
+];
+$('blogList').innerHTML = blogs.map(b => `
+  <a href="#" class="flex gap-4 bg-white border rounded-2xl p-3 hover:shadow-lg hover:border-lunaRed transition group">
+    <img loading="lazy" src="${b.img}" class="w-24 h-20 sm:w-28 sm:h-24 rounded-xl object-cover shrink-0" alt="blog">
+    <div class="py-1">
+      <h4 class="font-extrabold text-[15px] leading-snug group-hover:text-lunaRed transition">${b.t}</h4>
+      <p class="text-xs text-slate-500 mt-1.5">${b.d}</p>
+      <span class="inline-flex items-center gap-1.5 text-lunaBright text-xs font-extrabold mt-2">Read More <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+    </div>
+  </a>`).join('');
+
+/* ================= FAQ ================= */
+const faqs = [
+  { q: 'Is Luna Insurance an insurance company or a broker?', a: 'Luna Insurance Brokers Pvt. Ltd. is an IRDAI-licensed Direct (Life & General) Insurance Broker. We are not tied to any single insurer — we compare 42+ companies objectively and help you buy the plan that best fits your need and budget.' },
+  { q: 'How fast will I get my policy document?', a: 'Most policies are issued instantly. You receive the e-policy on email and WhatsApp within 10 minutes of successful payment. Hard copies are couriered on request within 5-7 working days.' },
+  { q: 'What is No Claim Bonus (NCB) and can I transfer it?', a: 'NCB is a discount on your own-damage premium for claim-free years, ranging from 20% to 50%. Yes, it is transferable when you switch insurer or buy a new vehicle — Luna ensures your NCB is carried forward.' },
+  { q: 'How do I file a claim with Luna?', a: 'Call our 24×7 helpline 1800-120-3456 or raise a request from the Luna app. A dedicated claim manager is assigned who handles documentation, surveyor coordination and follow-up till the amount is settled.' },
+  { q: 'Is there any hidden charge or consultancy fee?', a: 'No. Our advisory, comparison and claim assistance are 100% free. We earn a standard commission from the insurer, which does not change your premium. Price match guarantee applies — find it cheaper and we refund 2× the difference.' },
+  { q: 'Can I cancel my policy and get a refund?', a: 'Yes. Most policies come with a 15-day free-look period during which you can cancel and receive a refund after deduction of risk premium and stamp duty. Refunds are processed in 7-10 working days.' },
+  { q: 'Do you provide support in regional languages?', a: 'Yes, our advisors speak Hindi, English, Tamil, Telugu, Marathi, Bengali, Kannada and Gujarati. You can request a callback in your preferred language.' },
+  { q: 'What documents are needed to buy a car insurance policy?', a: 'Just your vehicle registration number, previous policy details (if any) and a photo of the RC. For new vehicles, we need the invoice and engine/chassis number. Everything is uploaded digitally.' }
+];
+$('faqList').innerHTML = faqs.map((f, i) => `
+  <div class="faq-item bg-white border-2 border-slate-100 rounded-2xl overflow-hidden">
+    <button onclick="toggleFaq(${i})" class="w-full flex items-center gap-3 text-left px-5 py-4">
+      <span class="w-8 h-8 rounded-full bg-lunaLight text-lunaBright flex items-center justify-center text-sm font-extrabold shrink-0">${i + 1}</span>
+      <b class="text-[15px] flex-1">${f.q}</b>
+      <i class="faq-arrow fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+    </button>
+    <div class="faq-ans"><p class="px-5 pb-5 text-sm text-slate-600 leading-relaxed">${f.a}</p></div>
+  </div>`).join('');
+
+function toggleFaq(i) {
+  const items = document.querySelectorAll('.faq-item');
+  const item = items[i];
+  const isOpen = item.classList.contains('open');
+  items.forEach(x => x.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+function filterFaq() {
+  const q = $('faqSearch').value.toLowerCase().trim();
+  document.querySelectorAll('.faq-item').forEach((el, i) => {
+    const match = (faqs[i].q + ' ' + faqs[i].a).toLowerCase().includes(q);
+    el.style.display = match ? '' : 'none';
+    if (q && match) el.classList.add('open');
+  });
+}
+
+/* ================= FORMS ================= */
+$('pospForm').addEventListener('submit', e => {
+  e.preventDefault();
+  e.target.reset();
+  toast('POSP application submitted! Our team will call you soon.', 'success');
+});
+$('contactForm').addEventListener('submit', e => {
+  e.preventDefault();
+  e.target.reset();
+  toast('Callback request received. We will call you in 10 minutes.', 'success');
+});
+
+/* ================= BUY FLOW ================= */
+let currentPlan = 'Luna Secure Plan', currentPrice = 1000;
+function buyPlan(name, price) {
+  currentPlan = name;
+  currentPrice = price === 'custom' ? 876 : price;
+  const disc = Math.round(currentPrice * 0.18);
+  const total = Math.round(currentPrice * 1.18 - disc);
+  $('sumPlan').textContent = name;
+  $('sumPrice').textContent = inr(currentPrice);
+  $('sumDisc').textContent = '-' + inr(disc);
+  $('sumTotal').textContent = inr(total);
+  $('payAmt').textContent = inr(total);
+  $('buyTitle').textContent = 'Buy: ' + name;
+  buyNext(1);
+  openModal('buyModal');
+}
+
+function buyNext(step) {
+  [1, 2, 3, 4].forEach(s => {
+    const el = $('buyStep' + s);
+    if (el) el.classList.toggle('hidden', s !== step);
+  });
+  document.querySelectorAll('#buySteps .step').forEach(st => {
+    const s = +st.dataset.s;
+    st.classList.remove('active', 'done');
+    if (s < step) st.classList.add('done');
+    else if (s === step) st.classList.add('active');
+  });
+
+  if (step === 2) {
+    const name = $('bName').value.trim(), mob = $('bMobile').value.trim(), email = $('bEmail').value.trim(), pin = $('bPin').value.trim();
+    if (!name || !validMobile(mob) || !email.includes('@') || pin.length < 6) {
+      toast('Please fill all details correctly', 'error');
+      buyNext(1);
+      return;
+    }
+  }
+  if (step === 3) {
+    const nom = $('bNominee').value.trim();
+    if (!nom) { toast('Please enter nominee name', 'error'); return; }
+    $('payAmt').textContent = $('sumTotal').textContent;
+  }
+}
+
+function payMethod(btn, method) {
+  document.querySelectorAll('.pay-btn').forEach(b => {
+    b.classList.remove('border-lunaBlue', 'bg-lunaLight');
+    b.classList.add('border-slate-200');
+  });
+  btn.classList.add('border-lunaBlue', 'bg-lunaLight');
+  btn.classList.remove('border-slate-200');
+  const box = $('payBox');
+  if (method === 'UPI') {
+    box.innerHTML = '<input id="upiId" placeholder="yourname@upi" class="w-full border-2 border-slate-200 rounded-xl px-4 py-2.5 text-sm font-semibold bg-white">';
+  } else if (method === 'Card') {
+    box.innerHTML = `
+      <input placeholder="Card Number" class="w-full border-2 border-slate-200 rounded-xl px-4 py-2.5 text-sm font-semibold bg-white">
+      <div class="grid grid-cols-2 gap-2 mt-2">
+        <input placeholder="MM / YY" class="border-2 border-slate-200 rounded-xl px-4 py-2.5 text-sm font-semibold bg-white">
+        <input placeholder="CVV" maxlength="3" class="border-2 border-slate-200 rounded-xl px-4 py-2.5 text-sm font-semibold bg-white">
+      </div>`;
+  } else {
+    box.innerHTML = `
+      <select class="w-full border-2 border-slate-200 rounded-xl px-4 py-2.5 text-sm font-semibold bg-white">
+        <option>HDFC Bank</option><option>ICICI Bank</option><option>State Bank of India</option><option>Axis Bank</option><option>Kotak Mahindra</option>
+      </select>`;
+  }
+}
+
+function processPayment() {
+  const btn = $('payBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Processing securely...';
+  setTimeout(() => {
+    btn.disabled = false;
+    btn.innerHTML = 'Pay <span id="payAmt">' + $('sumTotal').textContent + '</span> Securely <i class="fa-solid fa-lock ml-1"></i>';
+    $('policyNo').textContent = 'LUNA/2026/' + rnd(100000, 999999);
+    buyNext(4);
+    toast('Payment successful! Policy issued.', 'success');
+  }, 1600);
+}
+
+function downloadPolicy() {
+  toast('Policy PDF download started', 'success');
+}
+
+/* ================= CALLBACK / OTP ================= */
+function openCallback() {
+  $('cbStep1').classList.remove('hidden');
+  $('cbStep2').classList.add('hidden');
+  $('cbStep3').classList.add('hidden');
+  openModal('callbackModal');
+}
+function sendOtp(resend) {
+  const mob = $('cbMobile').value.trim();
+  const name = $('cbName').value.trim();
+  if (resend !== true && (!name || !validMobile(mob))) {
+    toast('Please enter name & valid 10-digit mobile', 'error');
+    return;
+  }
+  $('otpMobile').textContent = mob;
+  $('cbStep1').classList.add('hidden');
+  $('cbStep2').classList.remove('hidden');
+  toast('OTP sent successfully', 'success');
+  const otps = document.querySelectorAll('.otp');
+  otps.forEach(o => o.value = '');
+  if (otps[0]) setTimeout(() => otps[0].focus(), 100);
+}
+document.addEventListener('input', e => {
+  if (e.target.classList && e.target.classList.contains('otp')) {
+    e.target.value = e.target.value.replace(/\D/g, '');
+    if (e.target.value && e.target.nextElementSibling) e.target.nextElementSibling.focus();
+  }
+});
+function verifyOtp() {
+  const val = [...document.querySelectorAll('.otp')].map(o => o.value).join('');
+  if (val.length < 4) { toast('Please enter the 4-digit OTP', 'error'); return; }
+  $('cbStep2').classList.add('hidden');
+  $('cbStep3').classList.remove('hidden');
+  toast('Callback scheduled successfully!', 'success');
+}
+
+/* ================= CHATBOT ================= */
+const chatReplies = [
+  { k: ['claim', 'dawa', 'settle'], a: 'For claims, call our 24×7 helpline 1800-120-3456 or share your claim ID here — a dedicated claim manager will be assigned within 30 minutes.' },
+  { k: ['car', 'vehicle', 'motor'], a: 'Car insurance starts at ₹2,199/year with zero-depreciation cover and 7,500+ cashless garages. Want me to open the quote form?' },
+  { k: ['health', 'medical', 'hospital'], a: 'Health plans start at ₹485/month for ₹5L cover. Up to ₹1 Crore cover is available with no room-rent capping and 10,000+ cashless hospitals.' },
+  { k: ['term', 'life'], a: 'Term insurance: ₹1 Crore life cover at ₹490/month with 99.2% claim settlement. Free tele-medical and no paperwork required.' },
+  { k: ['ncb', 'bonus'], a: 'No Claim Bonus is 20%–50% discount for claim-free years. Luna ensures it transfers even when you change insurer.' },
+  { k: ['renew', 'expiry'], a: 'Renew in 2 minutes — just enter your vehicle or policy number in the Renew section. No inspection needed and your NCB stays safe.' },
+  { k: ['posp', 'agent', 'earn', 'job'], a: 'Our POSP program lets you earn up to ₹85,000/month with zero joining fee and 100% online IRDAI training. Scroll to the Become POSP section to apply.' },
+  { k: ['contact', 'call', 'phone', 'number'], a: 'You can reach us at 1800-120-3456 (toll free, 24×7) or care@lunainsurance.com. Our head office is at Connaught Place, New Delhi.' }
+];
+const chatChips = ['Car insurance price', 'Health plans', 'File a claim', 'Renew policy', 'Become POSP'];
+$('chatChips').innerHTML = chatChips.map(c => `<button onclick="quickChat('${c}')" class="whitespace-nowrap text-[11px] font-bold bg-lunaLight text-lunaBlue px-3 py-1.5 rounded-full hover:bg-lunaBlue hover:text-white transition">${c}</button>`).join('');
+
+function addChat(html, who) {
+  const wrap = document.createElement('div');
+  wrap.className = 'chat-msg flex ' + (who === 'user' ? 'justify-end' : 'justify-start');
+  wrap.innerHTML = who === 'user'
+    ? `<div class="bg-lunaBlue text-white rounded-2xl rounded-br-sm px-4 py-2.5 text-sm font-medium max-w-[80%]">${html}</div>`
+    : `<div class="bg-white border rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm text-slate-700 max-w-[85%] shadow-sm">${html}</div>`;
+  $('chatBody').appendChild(wrap);
+  $('chatBody').scrollTop = $('chatBody').scrollHeight;
+}
+
+function toggleChat(open) {
+  const w = $('chatWin');
+  if (open) {
+    w.classList.remove('hidden');
+    if (!$('chatBody').children.length) {
+      addChat('Namaste! Main <b>Luna Mitra</b> hoon. Aapki kya madad kar sakti hoon — car, health, term ya claim?', 'bot');
+    }
+    setTimeout(() => $('chatInput').focus(), 150);
+  } else {
+    w.classList.add('hidden');
+  }
+}
+function quickChat(t) {
+  addChat(t, 'user');
+  botReply(t);
+}
+function sendChat() {
+  const v = $('chatInput').value.trim();
+  if (!v) return;
+  addChat(v, 'user');
+  $('chatInput').value = '';
+  botReply(v);
+}
+function botReply(text) {
+  setTimeout(() => {
+    const t = text.toLowerCase();
+    const found = chatReplies.find(r => r.k.some(k => t.includes(k)));
+    addChat(found ? found.a : 'Great question! Our advisor can help you with the exact details. Meanwhile, use the quote form above to see live prices from 42+ insurers, or call 1800-120-3456.', 'bot');
+  }, 550);
+}
+
+/* ================= SEARCH ================= */
+const searchIndex = [
+  { t: 'Car Insurance', d: 'Zero-dep plans from ₹2,199/year', tab: 'car' },
+  { t: 'Bike Insurance', d: 'Two-wheeler plans from ₹538/year', tab: 'bike' },
+  { t: 'Health Insurance', d: '₹5L to ₹1Cr family cover', tab: 'health' },
+  { t: 'Term Life Insurance', d: '₹1Cr cover @ ₹490/month', tab: 'term' },
+  { t: 'Travel Insurance', d: 'Visa-compliant worldwide cover', tab: 'travel' },
+  { t: 'Home Insurance', d: 'Structure + contents protection', tab: 'home' },
+  { t: 'Renew Policy', d: 'Keep your NCB up to 50%', href: '#renew' },
+  { t: 'Track Claim', d: 'Live claim status & manager', href: '#claims' },
+  { t: 'Premium Calculator', d: 'Know your ideal term cover', href: '#calculator' },
+  { t: 'Become POSP Agent', d: 'Earn up to ₹85,000/month', href: '#posp' },
+  { t: 'Contact Us', d: 'Toll free 1800-120-3456', href: '#contact' }
+];
+function openSearch() {
+  $('searchOverlay').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+  $('searchInput').value = '';
+  doSearch();
+  setTimeout(() => $('searchInput').focus(), 120);
+}
+function closeSearch() {
+  $('searchOverlay').classList.add('hidden');
+  document.body.style.overflow = '';
+}
+function doSearch() {
+  const q = $('searchInput').value.toLowerCase().trim();
+  const res = searchIndex.filter(r => (r.t + ' ' + r.d).toLowerCase().includes(q));
+  $('searchResults').innerHTML = res.length
+    ? res.map(r => `
+      <button onclick="searchGo('${r.tab || ''}','${r.href || ''}')" class="w-full text-left flex items-center gap-3 p-3 rounded-xl hover:bg-lunaLight transition">
+        <span class="w-9 h-9 rounded-lg bg-lunaLight text-lunaBright flex items-center justify-center"><i class="fa-solid fa-magnifying-glass text-xs"></i></span>
+        <span><b class="block text-sm">${r.t}</b><span class="text-xs text-slate-500">${r.d}</span></span>
+        <i class="fa-solid fa-arrow-right ml-auto text-slate-300"></i>
+      </button>`).join('')
+    : '<p class="text-sm text-slate-500 text-center py-6">No results found. Try "claim", "car" or "renew".</p>';
+}
+function searchGo(tab, href) {
+  closeSearch();
+  if (tab) { gotoTab(tab); }
+  else if (href) { const el = document.querySelector(href); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+}
+
+/* ================= MODAL CLOSE ON BACKDROP / ESC ================= */
+document.querySelectorAll('.modal-bg').forEach(bg => {
+  bg.addEventListener('click', e => {
+    if (e.target === bg) {
+      bg.classList.add('hidden');
+      if (!document.querySelector('.modal-bg:not(.hidden)')) document.body.style.overflow = '';
+    }
+  });
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-bg').forEach(m => m.classList.add('hidden'));
+    document.body.style.overflow = '';
+  }
+});
+
+/* ================= HEADER SHADOW ON SCROLL ================= */
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+  const h = $('mainHeader');
+  if (window.scrollY > 40) h.classList.add('shadow-xl');
+  else h.classList.remove('shadow-xl');
+  lastScroll = window.scrollY;
+}, { passive: true });
+
+/* ================= MOBILE FIXES ================= */
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 1024) {
+    $('mobileMenu').classList.add('hidden');
+    $('menuIcon').className = 'fa-solid fa-bars';
+  }
+});
+
+/* Prevent form submit page reload for all forms */
+document.querySelectorAll('form').forEach(f => {
+  if (!f.hasAttribute('data-no-submit')) {
+    f.addEventListener('submit', e => {
+      if (!f.classList.contains('quote-form')) e.preventDefault();
+    });
+  }
+});
+</script>
+</body>
+</html>
